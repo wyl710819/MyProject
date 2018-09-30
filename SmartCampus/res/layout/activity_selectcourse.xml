@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/compare_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/selectcourse_title" />
+
+    <ListView
+        android:id="@+id/select_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="10dp"
+       >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/create_bottom"
+        android:layout_alignParentBottom="true">
+    	<TextView
+    	    android:layout_width="match_parent"
+    	    android:layout_height="1dp"
+    	    android:background="#ededed"
+    	    android:layout_alignParentTop="true"/>    
+    
+        <RadioGroup 
+            android:id="@+id/switch_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/switch_l"
+            android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/common_space"
+	        android:orientation="horizontal">
+	        <RadioButton 
+	            android:id="@+id/mine_pics"
+	            android:layout_width="@dimen/create_bottom_button_w"
+	            android:layout_height="@dimen/create_bottom_button_h"
+	            android:text="@string/mine_pics"
+	            android:textSize="@dimen/create_bottom_button_text_size"
+            	android:textColor="#2c91e1"
+	            android:button="@null"
+	            android:background="@null"
+	            android:gravity="center"/>
+	        <RadioButton 
+	            android:id="@+id/other_pics"
+	            android:layout_width="@dimen/create_bottom_button_w"
+	            android:layout_height="@dimen/create_bottom_button_h"
+	            android:text="@string/other_pics"
+            	android:textColor="#2c91e1"
+	            android:textSize="@dimen/create_bottom_button_text_size"
+	            android:button="@null"
+	            android:background="@null"
+	            android:gravity="center"/>
+        </RadioGroup>        
+        
+   <!--          android:text="@string/add_pics"
+            android:background="@drawable/add_btn"
+            android:textColor="#2c91e1"
+	        android:textSize="@dimen/create_bottom_button_text_size" -->
+        
+        <Button 
+            android:id="@+id/del"
+            android:layout_width="@dimen/create_bottom_button2_w"
+            android:layout_height="@dimen/create_bottom_button2_h"
+            android:background="@drawable/ic_delete_material"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+	        android:layout_marginRight="@dimen/common_space"
+	        android:layout_marginLeft="@dimen/common_space"
+	        android:padding="@dimen/common_small_space"/>
+        
+        <Button 
+            android:id="@+id/add"
+            android:layout_width="@dimen/create_bottom_button2_w"
+            android:layout_height="@dimen/create_bottom_button2_h"
+            android:background="@drawable/ic_add_material"
+            android:layout_toLeftOf="@id/del"
+            android:layout_centerVertical="true"
+	        android:layout_marginRight="@dimen/common_space"
+	        android:padding="@dimen/common_small_space"/>
+    </RelativeLayout>

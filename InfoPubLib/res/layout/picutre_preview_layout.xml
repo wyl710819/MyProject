@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:id="@+id/ll_pic"
+     android:background="#F0F0F0"
+     >
+       <include
+        android:id="@+id/titlebar"
+        layout="@layout/create_titlebar" 
+        />
+    <ImageView    
+	    android:id="@+id/local_image"
+	    android:layout_width="match_parent" 
+	    android:layout_height="match_parent"
+	    android:scaleType="fitCenter"
+	    android:layout_below="@id/titlebar"
+	    />
+   
+	
+	
+</RelativeLayout>

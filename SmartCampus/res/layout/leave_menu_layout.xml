@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/leave_popmenu_bg"
+    android:padding="5dp"
+     >
+    
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="我要请假"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:id="@+id/teacher_leave_menu_btn"
+        android:layout_marginLeft="20dp"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"
+        android:layout_below="@id/teacher_leave_menu_btn"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="我要出差"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:id="@+id/teacher_evection_menu_btn"
+        android:layout_below="@id/teacher_leave_menu_btn"
+         android:layout_marginLeft="20dp"
+        />
+</RelativeLayout>

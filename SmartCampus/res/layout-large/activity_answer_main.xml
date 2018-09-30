@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendarview="http://schemas.android.com/apk/res-auto"
+    xmlns:weekview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/answer_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#968980"
+    android:gravity="center_horizontal"
+   >
+
+    <RelativeLayout
+        android:id="@+id/answer_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#d3cac5" >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/answer_left_arrow" />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/tv_answerclass_linear"
+            android:layout_toRightOf="@id/back_btn"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="false"
+            >
+           <TextView
+            android:id="@+id/answer_class_tv"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textColor="#b94645"
+            android:layout_marginTop="15dp"
+            android:text="课堂答题" 
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/coursetable_class_iv_sel"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/answer_class_tv"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/answer_down_arrow" 
+            android:visibility="invisible" />  
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_answerclass_linear" >
+            <ImageView
+                android:id="@+id/img_answer_bluetooth_start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bluetooth_off" 
+                android:layout_margin="3dp"/>
+
+            <ImageView
+                android:id="@+id/img_answer_bluetooth_loading"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_bluetooth_loading"
+                android:scaleType="fitXY"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <RelativeLayout 
+            android:id="@+id/rl_startanswer_btn"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+        
+         <ImageView
+            android:id="@+id/start_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/homework_but_bag"/>
+         <ImageView
+            android:id="@+id/ans_start_arrow" 
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/answer_start_arrow"
+            />
+         <TextView
+            android:id="@+id/ans_start_text" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="19dp"
+            android:text="开始"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+            
+            />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+      <FrameLayout 
+        android:id="@+id/framlayout_optionLv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/answer_title_rl">
+     
+      </FrameLayout>
+    
+     <View
+        android:id="@+id/dropdown_mask_answer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />    
+     <FrameLayout
+	      android:id="@+id/dropdown_answer_class"
+	      android:layout_width="wrap_content"
+	      android:layout_height="200dp"
+	      android:layout_marginLeft="15dp"
+	      android:layout_below="@id/answer_title_rl"
+	      android:visibility="gone" >
+
+      <ListView
+          android:id="@+id/dropdown_listview_answer_class"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:visibility="gone"/>
+    </FrameLayout>
+	    <FrameLayout
+	        android:id="@+id/dropdown_answer_start"
+	        android:layout_width="wrap_content"
+	        android:layout_height="200dp"
+	        android:layout_below="@id/answer_title_rl"
+	        android:layout_alignParentRight="true"
+	         android:paddingRight="0dp"
+	        android:visibility="gone" >
+		<ListView
+	        android:id="@+id/dropdown_listview_answer_start"
+	        android:layout_width="140dp"
+	        android:layout_height="wrap_content"
+	        android:background="@color/white"
+	        android:visibility="gone"/>
+    	</FrameLayout>
+</RelativeLayout>

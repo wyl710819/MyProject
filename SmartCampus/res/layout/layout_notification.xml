@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/common_dp_10">
+
+    <ImageView 
+ 	    android:id="@+id/icon" 	    
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 	    android:layout_alignParentLeft="true"
+ 	    android:layout_alignParentTop="true"/>
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" 
+        android:layout_toRightOf="@id/icon"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/common_dp_10"
+        />
+
+    <TextView
+        android:id="@+id/ssid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" 
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@id/icon"
+        android:layout_marginLeft="@dimen/common_dp_10"
+        android:layout_marginTop="@dimen/common_small_space"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        />
+ 	
+ 	<TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" 
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/common_dp_10"
+        />
+ 	
+
+</RelativeLayout>

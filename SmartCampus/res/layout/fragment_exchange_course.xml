@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+    
+    <com.routon.smartcampus.coursetable.WeekCalendarView
+        android:id="@+id/weekCalendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#d7eefb" >
+    </com.routon.smartcampus.coursetable.WeekCalendarView>
+
+    <FrameLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	     
+	    <FrameLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		     
+		    android:id="@+id/framelayout_exchange">
+		
+		    <ScrollView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="#FFFFFF" >
+		
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical" >
+		
+		            <LinearLayout
+		                android:id="@+id/am_linear_root"
+		                android:layout_width="match_parent"
+		                android:layout_height="250dp"
+		                android:layout_below="@id/weekCalendarView"
+		                android:layout_marginBottom="0dp"
+		                android:layout_marginLeft="5dp"
+		                android:layout_marginRight="5dp"
+		                android:layout_marginTop="0dp"
+		                android:background="@drawable/teahcer_course_blue_root_rectangle_shape"
+		                android:orientation="horizontal" >
+		
+		                <ListView
+		                    android:id="@+id/monday_am_course"
+		                    android:layout_width="69dp"
+		                    android:layout_height="match_parent"
+		                    android:divider="@drawable/dashed_line"
+		                    android:dividerHeight="2dp"
+		                    android:layerType="software" >
+		                </ListView>
+		
+		                <View
+		                    android:layout_width="250dp"
+		                    android:layout_height="match_parent"
+		                    android:layout_marginLeft="-125dp"
+		                    android:layout_marginRight="-125dp"
+		                    android:background="@drawable/dashed_line_vertical"
+		                    android:layerType="software" >
+		                </View>
+		
+		                <ListView
+		                    android:id="@+id/tues_am_course"
+		                    android:layout_width="69dp"
+		                    android:layout_height="match_parent"
+		                    android:divider="@drawable/dashed_line"
+		                    android:dividerHeight="2dp"
+		                    android:layerType="software" >
+		                </ListView>
+		
+		                <View
+		                    android:layout_width="250dp"
+		                    android:layout_height="match_parent"
+		                    android:layout_marginLeft="-125dp"
+		                    android:layout_marginRight="-125dp"
+		                    android:background="@drawable/dashed_line_vertical"
+		                    android:layerType="software" >
+		                </View>
+		
+		                <ListView
+		                    android:id="@+id/wednes_am_course"
+		                    android:layout_width="69dp"
+		                    android:layout_height="match_parent"
+		                    android:divider="@drawable/dashed_line"
+		                    android:dividerHeight="2dp"
+		                    android:layerType="software" >
+		                </ListView>
+		
+		                <View
+		                    android:layout_width="250dp"
+		                    android:layout_height="match_parent"
+		                    android:layout_marginLeft="-125dp"
+		                    android:layout_marginRight="-125dp"
+		                    android:background="@drawable/dashed_line_vertical"
+		                    android:layerType="software" >
+		                </View>
+		
+		                <ListView
+		                    android:id="@+id/thur_am_course"
+		                    android:layout_width="70dp"
+		                    android:layout_height="match_parent"
+		                    android:divider="@drawable/dashed_line"
+		                    android:dividerHeight="2dp"
+		                    android:layerType="software" >
+		                </ListView>
+		
+		                <View
+		                    android:layout_width="250dp"
+		                    android:layout_height="match_parent"
+		                    android:layout_marginLeft="-125dp"
+		                    android:layout_marginRight="-125dp"
+		                    android:background="@drawable/dashed_line_vertical"
+		                    android:layerType="software" >
+		                </View>
+		
+		                <ListView
+		                    android:id="@+id/fri_am_course"
+		                    android:layout_width="70dp"
+		                    android:layout_height="match_parent"
+		                    android:divider="@drawable/dashed_line"
+		                    android:dividerHeight="2dp"
+		                    android:layerType="software" >
+		                </ListView>
+		            </LinearLayout>
+		            
+		            <TextView 
+		                android:id="@+id/weekModeText"
+		                android:layout_width="match_parent"
+		                android:layout_height="20dp"
+		                android:layout_below="@id/am_linear_root"
+		                android:gravity="center"
+		                android:textSize="16sp"
+		                android:textColor="@android:color/darker_gray"
+		                android:text="中午"/>
+		
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="250dp"
+		                android:layout_below="@id/weekModeText"
+		                android:layout_marginLeft="5dp"
+		                android:layout_marginRight="5dp"
+		                android:layout_marginTop="3dp"
+		                android:background="@drawable/teahcer_course_yellow_root_rectangle_shape"
+		                android:orientation="horizontal" 
+		                android:id="@+id/pm_list_layout">
+		
+		                <ListView
+		                    android:id="@+id/monday_pm_course"
+		                    android:layout_width="69dp"
+		                    android:layout_height="match_parent"
+		                    android:divider="@drawable/dashed_line"
+		                    android:dividerHeight="2dp"
+		                    android:layerType="software" >
+		                </ListView>
+		
+		                <View
+		                    android:layout_width="250dp"
+		                    android:layout_height="match_parent"
+		                    android:layout_marginLeft="-125dp"
+		                    android:layout_marginRight="-125dp"
+		                    android:background="@drawable/dashed_line_vertical"
+		                    android:layerType="software" >
+		                </View>
+		
+		                <ListView
+		                    android:id="@+id/tues_pm_course"
+		                    android:layout_width="69dp"
+		                    android:layout_height="match_parent"
+		                    android:divider="@drawable/dashed_line"
+		                    android:dividerHeight="2dp"
+		                    android:layerType="software" >
+		                </ListView>
+		
+		                <View
+		                    android:layout_width="250dp"
+		                    android:layout_height="match_parent"
+		                    android:layout_marginLeft="-125dp"
+		                    android:layout_marginRight="-125dp"
+		                    android:background="@drawable/dashed_line_vertical"
+		                    android:layerType="software" >
+		                </View>
+		
+		                <ListView
+		                    android:id="@+id/wednes_pm_course"
+		                    android:layout_width="69dp"
+		                    android:layout_height="match_parent"
+		                    android:divider="@drawable/dashed_line"
+		                    android:dividerHeight="2dp"
+		                    android:layerType="software" >
+		                </ListView>
+		
+		                <View
+		                    android:layout_width="250dp"
+		                    android:layout_height="match_parent"
+		                    android:layout_marginLeft="-125dp"
+		                    android:layout_marginRight="-125dp"
+		                    android:background="@drawable/dashed_line_vertical"
+		                    android:layerType="software" >
+		                </View>
+		
+		                <ListView
+		                    android:id="@+id/thur_pm_course"
+		                    android:layout_width="70dp"
+		                    android:layout_height="match_parent"
+		                    android:divider="@drawable/dashed_line"
+		                    android:dividerHeight="2dp"
+		                    android:layerType="software" >
+		                </ListView>
+		
+		                <View
+		                    android:layout_width="250dp"
+		                    android:layout_height="match_parent"
+		                    android:layout_marginLeft="-125dp"
+		                    android:layout_marginRight="-125dp"
+		                    android:background="@drawable/dashed_line_vertical"
+		                    android:layerType="software" >
+		                </View>
+		
+		                <ListView
+		                    android:id="@+id/fri_pm_course"
+		                    android:layout_width="70dp"
+		                    android:layout_height="match_parent"
+		                    android:divider="@drawable/dashed_line"
+		                    android:dividerHeight="2dp"
+		                    android:layerType="software" >
+		                </ListView>
+		            </LinearLayout>
+		        </LinearLayout>
+		    </ScrollView>
+		</FrameLayout>
+	    	
+	
+   	</FrameLayout>	    	
+</LinearLayout>
+	
+

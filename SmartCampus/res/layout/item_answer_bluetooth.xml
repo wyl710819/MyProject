@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@drawable/back_answer_list_item">
+    <TextView 
+        android:id="@+id/txt_answer_bluetooth_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+    <TextView 
+        android:id="@+id/txt_answer_bluetooth_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/img_answer_bluetooth_ico"
+        android:layout_marginRight="20dp"
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+    <ImageView 
+        android:id="@+id/img_answer_bluetooth_signal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+    <ImageView 
+        android:id="@+id/img_answer_bluetooth_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/img_answer_bluetooth_signal"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/bluetooth_on"/>
+
+</RelativeLayout>

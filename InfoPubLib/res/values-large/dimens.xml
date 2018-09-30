@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="normal_font">18sp</dimen>
+	<dimen name="symbol_normal_font">30sp</dimen>
+
+	<dimen name="title_bar_h">50dp</dimen>
+	
+	<dimen name="common_space">10dp</dimen>
+	<dimen name="common_small_space">4dp</dimen>
+	<dimen name="common_dp_10">10dp</dimen>
+	
+	<dimen name="create_bottom">66dp</dimen>
+	<dimen name="create_bottom_button_w">90dp</dimen>
+	<dimen name="create_bottom_button_h">40dp</dimen>
+	
+	<dimen name="create_bottom_button2_w">30dp</dimen>
+	<dimen name="create_bottom_button2_h">30dp</dimen>
+	<dimen name="create_bottom_button_text_size">18sp</dimen>
+	<dimen name="add_activity_botton">50dp</dimen>
+	
+	<dimen name="text_select_item_text_size">16sp</dimen>
+	<dimen name="text_select_item_h">60dp</dimen>
+	
+
+	<dimen name="pic_select_item_w">128dp</dimen>
+	<dimen name="pic_select_item_h">128dp</dimen>
+	
+	<dimen name="pic_add_item_h">115dp</dimen>
+
+	<dimen name="add_text_padding">30dp</dimen>
+	<dimen name="add_text_title_h">60dp</dimen>
+	
+	<dimen name="add_text_info_h">160dp</dimen>
+	
+	<dimen name="right_info_margin_right">40dp</dimen>
+	<dimen name="right_icon_margin_right">20dp</dimen>
+
+	<dimen name="select_check_box_w">45dp</dimen>
+	<dimen name="select_check_box_h">45dp</dimen>
+	
+	<dimen name="title_bar_btn_w">60dp</dimen>
+	<dimen name="title_bar_btn_h">40dp</dimen>
+	
+	<dimen name="group_sel_item_h">40dp</dimen>
+	
+
+	<dimen name="tip_font">22sp</dimen>
+	<dimen name="activity_top_height">50dp</dimen>
+	<dimen name="setting_item_margin_left">20dp</dimen>
+	<dimen name="setting_item_height">50dp</dimen>
+	<dimen name="terminal_detail_item_height">34dp</dimen>
+
+	<dimen name="plan_item_padding">5dp</dimen>
+	
+	<dimen name="abount_dialog_padding">30dp</dimen>
+	<dimen name="abount_dialog_text_padding">20dp</dimen>
+	<dimen name="img_effects_font">10dp</dimen>
+	
+	<dimen name="user_item_edit_text_width">200dp</dimen>
+	<dimen name="user_item_tip_text_width">120dp</dimen>
+	
+	<dimen name="tabbar_icon_size">36dp</dimen>
+	<dimen name="tabbar_text_margin_top">-8dp</dimen>
+	
+	<dimen name="setting_item_padding">10dp</dimen>
+	<dimen name="setting_item_day_info_width">350dp</dimen>
+	
+	<dimen name="modify_dialog_left_width">110dp</dimen>
+	
+	<dimen name="profile_image_w">100dp</dimen>
+	<dimen name="profile_image_h">100dp</dimen>
+</resources>

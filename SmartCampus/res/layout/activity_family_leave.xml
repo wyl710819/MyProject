@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_h"
+        android:background="#18b1ed">
+        <ImageView 
+            android:id="@+id/img_family_leave_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="全部记录"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+        <ImageView 
+            android:id="@+id/img_family_leave_add"
+            android:src="@drawable/ic_family_add_leave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+    </RelativeLayout>
+	<ListView 
+	    android:id="@+id/lv_family_leave_data"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:dividerHeight="1px"
+	    android:divider="#999999"/>
+</LinearLayout>

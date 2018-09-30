@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array name="effect_array">
+        <item>随机</item>
+        <item>顺序</item> 
+        <item>循环</item>
+    </string-array>
+    
+    <string-array name="plan_extra_action_array_offline">
+         <item>@string/plan_del</item>
+         <item>离线发布</item>
+    </string-array>
+
+    <string-array name="plan_extra_action_array">
+         <item>@string/plan_del</item>
+         <item>离线缓存</item>
+    </string-array>
+    
+    <string-array name="terminal_extra_action_array">
+        <item>查看节目</item>
+    </string-array>
+    <string-array name="userlist_extra_action_array">
+        <item>删除</item>
+    </string-array>
+    <string-array name="class_info_action_array">
+        <item>编辑</item>
+        <item>删除</item> 
+        <item>发布</item>
+    </string-array>
+    <string-array name="class_info_edit_action_array">
+        <item>预览</item>
+        <item >添加</item>
+        <item>删除</item> 
+        <item>前移</item>
+        <item>后移</item> 
+    </string-array>
+</resources>

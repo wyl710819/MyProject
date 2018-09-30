@@ -1,0 +1,46 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="student_bottom_ll">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="student_bottom_iv">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="student_bottom_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="animation_theme" parent="@android:style/Theme">
+        <item name="android:windowAnimationStyle">@style/default_animation</item>
+    </style>
+
+    <style name="badge_listview_style">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@color/badgetype_listview_color</item>
+    </style>
+    
+    <style name="PopupAnimation">  
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>  
+        <item name="android:windowExitAnimation">@anim/fade_out</item>  
+    </style>  
+    
+    <style name="take_photo_anim" parent="android:Animation"> 
+    <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item> 
+    <item name="android:windowExitAnimation">@anim/pop_exit_anim</item> 
+</style>
+    
+</resources>

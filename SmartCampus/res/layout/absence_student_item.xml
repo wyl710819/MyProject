@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <ImageView 
+        android:id="@+id/student_img"
+        android:layout_width="@dimen/rankinglist_student_image_w"
+        android:layout_height="@dimen/rankinglist_student_image_h"
+        android:padding="3dp"
+        android:src="@drawable/default_student"
+        />
+   <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/student_img"
+        android:layout_marginLeft="3dp"
+        android:layout_centerVertical="true"
+        />
+     <TextView
+        android:id="@+id/arrow_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/arrow_text_grey"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/taxis_text"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/arrow_text"
+        android:layout_centerVertical="true"
+        android:textStyle="italic"
+        android:gravity="center"
+        />
+    
+    <TextView
+        android:id="@+id/absence_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/taxis_text"
+        android:layout_marginRight="15dp"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        />
+    
+</RelativeLayout>

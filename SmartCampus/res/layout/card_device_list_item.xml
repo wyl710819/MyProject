@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_gravity="center_vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	    <TextView 
+	        android:id="@+id/deviceName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/image_blue_scale_height"
+	        android:layout_marginLeft="@dimen/listitem_padding"
+	        android:gravity="center_vertical"
+	        android:text="@string/device_name"
+	        android:layout_marginBottom="10dp"
+	        android:textSize="@dimen/listitem_textsize"
+	             />
+	    
+
+	    <ImageView 
+	        android:id="@+id/image_blt_scale"
+	        android:layout_width="@dimen/image_blue_scale_width"
+	        android:layout_height="@dimen/image_blue_scale_height"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_alignBottom="@id/deviceName"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="80dp"
+	        android:src="@drawable/bluet_scale3"/>
+	    
+	     <ImageView 
+	        android:id="@+id/image_upgrade"
+	        android:layout_width="@dimen/image_blue_scale_width"
+	        android:layout_height="@dimen/image_blue_scale_height"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_alignBottom="@id/deviceName"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/upgrade"/>
+	     
+	       
+    	<ProgressBar  
+	        android:id="@+id/progressBar" 
+	        style="@android:style/Widget.ProgressBar.Horizontal"    
+	        android:progressDrawable = "@drawable/ble_upgrade_progress"
+	        android:layout_below="@id/deviceName"
+	        android:max="100"
+	        android:progress="0"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="match_parent"  
+	        android:layout_height="wrap_content"  
+	        android:layout_marginLeft="@dimen/listitem_padding" 
+	        android:layout_marginRight="20dp"/> 
+	</RelativeLayout>
+	<!-- <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	         android:id="@+id/macname"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/listitem_margin_left"
+	        android:text="@string/mac_address"
+            android:textSize="@dimen/text_size"
+            />
+	    <TextView 
+	        android:id="@+id/macAddress"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+	        android:text="@string/address_str"/>
+	</LinearLayout> -->

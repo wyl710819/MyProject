@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+   <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@color/white"
+    	android:orientation="vertical">
+    	 <RelativeLayout android:id="@+id/profilephtoto_rl"
+    	    android:padding="@dimen/setting_item_padding"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:background="@color/white">
+	    		<TextView android:id="@+id/profilephoto_tv" 
+	    		    style="@style/normalBlackText" 
+	    		    android:gravity="center"
+	    		    android:text="@string/profilephoto"
+	        		android:layout_width="wrap_content"  
+	        		android:layout_height="@dimen/profile_image_h"/>
+	    		<com.routon.inforelease.widget.CircleImageView   android:id="@+id/profilephoto_iv" 
+	    		    android:src="@drawable/default_profile_photo" 
+	    		    android:layout_alignParentRight="true"
+	        		android:layout_width="@dimen/profile_image_w"  
+	        		android:layout_height="@dimen/profile_image_h"/>
+    	</RelativeLayout>
+    	 <ImageView  android:layout_marginLeft="@dimen/setting_item_padding"
+        	android:id="@+id/bottom_line"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:src="@drawable/line" />
+    	<com.routon.inforelease.widget.SettingItem  
+        	android:id="@+id/userinfoitem"  
+        	android:layout_width="match_parent"  
+        	android:layout_height="wrap_content"/>  
+       	<com.routon.inforelease.widget.SettingItem  
+	       	android:id="@+id/phoneitem"  
+	       	android:layout_width="match_parent"  
+	       	android:layout_height="wrap_content"/>  
+       	<com.routon.inforelease.widget.SettingItem  
+	       	android:id="@+id/addressitem"  
+	       	android:layout_width="match_parent"  
+	       	android:layout_height="wrap_content"/>   	
+       	<com.routon.inforelease.widget.SettingItem  
+	       	android:id="@+id/modifyitem"  
+	       	android:layout_width="match_parent"  
+	       	android:layout_height="wrap_content"/>  
+	   <com.routon.inforelease.widget.SettingItem  
+	       	android:id="@+id/changerule"
+	       	android:visibility="gone"  
+	       	android:layout_width="match_parent"  
+	       	android:layout_height="wrap_content"/>  
+	  	<Button
+	          	android:id="@+id/btn_logout"
+	          	android:text="注  销"
+	          	android:textColor="@android:color/white"
+            	android:textSize="20sp"
+	          	android:background="#ff0000"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="40dp"
+				android:layout_marginLeft="60dp"
+				android:layout_marginRight="60dp"
+	            android:layout_width="match_parent"
+	        	android:layout_height="60dp" />
+	</LinearLayout>
+</LinearLayout>
+</ScrollView>

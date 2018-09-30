@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp">
+     <ImageView
+        android:id="@+id/avator"
+        android:layout_width="@dimen/recentissued_avator_w"
+        android:layout_height="@dimen/recentissued_avator_h"
+        android:src="@drawable/default_student" />
+     <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="@dimen/recentissued_avator_w"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avator"/>
+    <RelativeLayout android:id="@+id/above_content"
+        android:layout_toRightOf="@id/avator"
+        android:layout_marginLeft="10dp"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/flowerImage"
+        android:layout_width="@dimen/list_view_flower_image_width"
+        android:layout_height="@dimen/list_view_flower_image_height"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/GradeTv"
+        android:layout_width="@dimen/list_view_flower_image_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flowerImage"
+        android:layout_marginTop="@dimen/list_view_grade_pic_margin_top"
+        android:layout_alignLeft="@id/flowerImage"
+        android:gravity="center_horizontal"
+        android:text="+10"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_toLeftOf="@id/flowerImage"      
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:text="2017-9-16" />  
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="@dimen/list_view_flower_common_margin"
+        android:layout_alignLeft="@id/time"
+        android:layout_alignRight="@id/time"
+        android:text="小红花备注" />
+</RelativeLayout>
+    <com.routon.smartcampus.view.NoScrollGridView
+        android:id="@+id/gridView"
+        android:layout_marginTop="@dimen/list_view_flower_common_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/above_content"
+        android:layout_alignLeft="@id/above_content"
+        android:layout_alignRight="@id/above_content"
+        android:verticalSpacing="@dimen/list_view_flower_common_margin"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:visibility="gone" />
+
+</RelativeLayout>

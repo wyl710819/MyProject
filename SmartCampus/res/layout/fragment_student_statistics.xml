@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/statistics_badge_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/student_title_bg"
+        android:gravity="center"
+        android:text="@string/statistics_badge_title_text"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout android:id="@+id/sel_area_bg"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:background="@drawable/badge_student_info_bg"
+        android:layout_below="@id/statistics_badge_title_text"
+        >
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:background="@drawable/badge_student_info"
+        android:layout_below="@id/statistics_badge_title_text"
+        android:layout_margin="10dp"
+        >
+    </RelativeLayout>
+   <RelativeLayout
+        android:id="@+id/statistics_badge_text1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/statistics_badge_title_text"
+         >
+
+        <TextView
+            android:id="@+id/student_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:paddingLeft="20dp"
+            android:text="&#160;&#8201;&#160;&#160;&#8201;&#160;&#160;&#8201;&#160;班&#160;&#160;&#160;&#8201;&#160;&#160;&#160;&#8201;级："
+            android:layout_alignParentBottom="true"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/student_class_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/student_class"
+            android:layout_marginLeft="20dp"
+           android:clickable="true"
+            android:text=""
+            android:layout_marginBottom="3dp"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_line"
+            android:layout_toRightOf="@id/student_class"
+           
+           />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/statistics_badge_text4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        android:layout_below="@id/statistics_badge_text1"
+         >
+
+        <TextView
+            android:id="@+id/student_badge_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="20dp"
+            android:text="&#160;&#160;&#8201;&#160;&#160;&#8201;&#160;&#160;&#8201;颁&#160;&#8201;发&#160;&#160;人："
+            
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/student_badge_edit_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+           android:layout_toRightOf="@id/student_badge_type"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:text="全部"
+             android:layout_marginBottom="3dp"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_line"
+            android:layout_toRightOf="@id/student_badge_type"
+           />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/statistics_badge_text2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/statistics_badge_text4"
+        
+         >
+
+        <TextView
+            android:id="@+id/student_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="20dp"
+            android:text="&#160;&#160;&#8201;&#160;&#160;&#8201;&#160;&#160;&#8201;小&#160;&#8201;红&#160;&#160;花："
+            
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/student_badge_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/student_badge"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:text="全部"
+             android:layout_marginBottom="3dp"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_line"
+            android:layout_toRightOf="@id/student_badge"
+           />
+    </RelativeLayout>
+     <RelativeLayout
+        android:id="@+id/statistics_badge_text6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/statistics_badge_text2"
+        
+         >
+
+        <TextView
+            android:id="@+id/time_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="20dp"
+            android:text="&#160;&#160;&#8201;&#160;&#160;&#8201;&#160;&#160;&#8201;颁发时间："
+            
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/time_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/time_name"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:text="本学期"
+             android:layout_marginBottom="3dp"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_line"
+            android:layout_toRightOf="@id/time_name"
+           />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/statistics_badge_text3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/student_class_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/statistics_badge_text5"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/statistics_badge_text2"
+         />
+    <ListView
+        android:id="@+id/student_name_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sel_area_bg" >
+    </ListView>
+
+    <View
+        android:id="@+id/dropdown_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/dropdown_fl_class"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_below="@id/statistics_badge_text1"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/dropdown_listview_class"
+            style="@style/badge_listview_style"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/dropdown_fl_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_below="@id/statistics_badge_text2"
+        android:visibility="gone" 
+        >
+
+        <ListView
+            android:id="@+id/dropdown_listview_badge"
+            style="@style/badge_listview_style"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/dropdown_fl_badge_type"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_below="@id/statistics_badge_text4"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/dropdown_listview_badge_type"
+            style="@style/badge_listview_style"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/dropdown_fl_time_type"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_below="@id/statistics_badge_text6"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/dropdown_listview_time_type"
+            style="@style/badge_listview_style"/>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/setting_item_height"
+    android:layout_gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/info_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:layout_marginLeft ="@dimen/setting_item_padding"/>
+    <TextView android:layout_marginLeft ="@dimen/setting_item_padding"
+        android:id="@+id/name"
+        style="@style/normalBlackText"
+        android:layout_width="wrap_content"
+        android:maxWidth="200dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/info_img"/>
+    <TextView
+        android:id="@+id/info"
+        style="@style/normalGrayText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/right_info_margin_right"
+        android:adjustViewBounds="true"
+        android:maxLines="2"
+        android:maxWidth="180dp" />
+
+    <ImageView
+        android:id="@+id/infoicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/right_icon_margin_right"
+        android:src="@drawable/more"
+        android:visibility="invisible" />
+    <ImageView
+          	android:id="@+id/dot_iv"
+            android:layout_width="8dp"
+            android:layout_toLeftOf="@id/infoicon"
+            android:layout_centerVertical="true"
+            android:layout_height="8dp"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"
+            android:src="@drawable/shape_rank_red"/>
+    <ImageView android:layout_alignLeft="@id/name"
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/line" />
+
+</RelativeLayout>

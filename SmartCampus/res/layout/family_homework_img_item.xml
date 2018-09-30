@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="130dp"
+    >
+   
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pic_item_rl"
+        >
+    <ImageView 
+        android:layout_width="90dp"
+        android:layout_height="130dp"
+        android:id="@+id/family_homework_img_view"
+        android:src="@drawable/default_pic"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="5dp" 
+        android:layout_marginRight="5dp"
+        />
+     <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+     </RelativeLayout>
+     
+    <RelativeLayout 
+        android:layout_width="90dp"
+        android:layout_height="130dp"
+        android:id="@+id/audio_item_rl"
+        android:background="@drawable/shape_edit"
+        >
+         
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:background="@drawable/record_blue_rectangle_shape"
+            android:id="@+id/audio_item_child_rl"
+            android:layout_marginTop="40dp"
+           >
+        <ImageView
+	        android:id="@+id/play_record_img"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_gravity="center_vertical"
+	        android:gravity="center"
+	        android:background="@drawable/play_record_anim"/>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30s"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/play_record_img"
+            android:id="@+id/tv_record_time"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            />
+        </RelativeLayout>
+        
+     </RelativeLayout>
+     
+     <ImageView
+            android:layout_width="25dp"
+	        android:layout_height="25dp"
+	        android:id="@+id/delete_homework_record"
+	        android:src="@drawable/delete_homework_res"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginLeft="68dp"
+	        />
+
+</RelativeLayout>

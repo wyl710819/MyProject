@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#28A4A8"
+        android:gravity="center"
+        android:text="@string/recent_issued"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+	  
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list"
+        android:divider="@drawable/list_item_recent_issued_divider" 
+        android:dividerHeight="@dimen/list_view_divider_height"
+        android:background = "@color/flower_list_light_color"
+        android:layout_below="@id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

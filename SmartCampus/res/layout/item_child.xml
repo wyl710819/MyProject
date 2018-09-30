@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+	<RelativeLayout 
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+          	android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal_font"/>
+	<TextView
+          	android:id="@+id/tv1"
+          	android:layout_below="@id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/normal_font"/>
+	<TextView
+          	android:id="@+id/tv2"
+          	android:layout_below="@id/tv1"
+          	android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal_font"/>
+	<ImageView android:id="@+id/profileIv"
+	    android:layout_marginRight="20dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/default_student"
+		android:layout_width="@dimen/register_image_width"
+		android:layout_height="@dimen/register_image_height"/>
+	<ImageView
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginRight="6dp"
+	    android:src="@drawable/more"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+</RelativeLayout>
+ <!--必须指定宽度-->
+ <!--必须指定宽度-->
+   <!--   <TextView
+        android:id="@+id/txtv_delete"
+        android:layout_width="96dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="#ff0000"
+        android:textColor="#ffffff"
+        android:text="删除" />-->
+</LinearLayout>

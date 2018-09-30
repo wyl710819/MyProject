@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.routon.smartcampus.gradetrack.GradeTrackTitle
+        android:id="@+id/hist_pic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.routon.smartcampus.view.HistogramView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/histogram_view"
+        android:layout_below="@id/hist_pic_title"
+        ></com.routon.smartcampus.view.HistogramView>
+    
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rado_line_view"
+        android:layout_below="@id/histogram_view"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        >
+        <View 
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/shape_histogram_blue"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_his_student"
+            android:textSize="16sp"
+            android:layout_marginLeft="3dp"
+            />
+        <View 
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/shape_histogram_yellow"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平均"
+            android:textSize="16sp"
+            android:layout_marginLeft="3dp"
+            />
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/correct_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_blue_gradient" >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/back_btn"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+        <LinearLayout 
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:orientation="horizontal"
+		            android:id="@+id/tv_layout"
+		            android:background="@drawable/rectangle_shape"
+		            android:layout_marginBottom="8dp"
+		            android:layout_marginTop="8dp"
+		            android:layout_marginRight="10dp"
+		            android:layout_alignParentRight="true"
+		            android:paddingRight="10dp"
+		            android:clickable="true"
+		            >
+		        <TextView
+		            android:id="@+id/tv_class"
+		            android:layout_width="95dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		            android:textColor="@color/white"
+		            android:text="所有" 
+		            android:textSize="18sp"/>
+
+		        <ImageView
+		            android:id="@+id/iv_class_sel"
+		            android:layout_width="35dp"
+		            android:layout_height="match_parent"
+		            android:layout_toRightOf="@id/tv_class"
+		            android:gravity="center"
+		            android:layout_gravity="center_vertical"
+		            android:layout_marginTop="10dp"
+		            android:layout_marginBottom="10dp"
+		            android:src="@drawable/down_arrow" />
+		            
+        		</LinearLayout>
+        
+    </RelativeLayout>
+
+     <ListView
+        android:id="@+id/grade_compare_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/correct_title_rl"
+        android:background="@drawable/compare_list_bag"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+    </ListView>
+    
+     <View
+        android:id="@+id/dropdown_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />    
+     <FrameLayout
+	      android:id="@+id/dropdown_layout"
+	      android:layout_width="wrap_content"
+	      android:layout_height="200dp"
+	      android:layout_alignParentRight="true"
+	      android:paddingRight="10dp"
+	      android:layout_below="@id/correct_title_rl"
+	      android:visibility="gone" >
+
+      <ListView
+          android:id="@+id/dropdown_listview"
+          android:layout_width="140dp"
+          android:layout_height="wrap_content"
+          android:background="@android:color/white"
+          android:visibility="gone"/>
+    </FrameLayout>
+</RelativeLayout>

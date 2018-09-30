@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_info"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dp" 
+    android:background="@drawable/homework_item_bag">
+
+    
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_assign_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:textColor="#1779be"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/assign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:background="@drawable/assing_homework_bag" />
+            <View 
+                android:layout_below="@id/assign"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="#33CAA796"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/tv_description_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="#615150"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+       
+
+           <!--  <com.routon.smartcampus.view.NoScrollGridView
+                android:id="@+id/gv_images"
+                android:layout_below="@+id/rl3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="2dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2dp" 
+                android:visibility="gone"
+             /> -->
+            <com.routon.smartcampus.view.HorizontalListView
+	            android:id="@+id/gv_images"
+	            android:layout_width="match_parent"
+	            android:layout_height="120dp"
+	            android:layout_marginLeft="5dp" 
+	            android:layout_marginRight="10dp"
+	            android:layout_below="@id/rl3"
+	            android:visibility="gone"/>
+            
+            
+        
+    </RelativeLayout>
+
+</RelativeLayout>

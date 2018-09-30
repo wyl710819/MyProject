@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="200dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="20dp" >
+
+        <TextView
+            android:id="@+id/select_code_image_tip"
+            style="@style/normalBlackText"
+            android:layout_width="@dimen/register_text_width"
+            android:layout_height="@dimen/register_item_height"
+            android:gravity="right"
+            android:paddingTop="10dp"
+            android:text="@string/class_qrcode" />
+
+        <Button
+            android:id="@+id/select_code_image"
+            android:layout_width="@dimen/register_select_btn_width"
+            android:layout_height="@dimen/register_item_height"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/select_code_image_tip"
+            android:background="@drawable/round_rect_btn"
+            android:gravity="center"
+            android:text="选择二维码图片"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/qrcode_image_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/select_code_image"
+            android:layout_below="@id/select_code_image"
+            android:text="读取图片中的班级信息"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/child_name_tv"
+            style="@style/normalBlackText"
+            android:layout_width="@dimen/register_text_width"
+            android:layout_height="@dimen/register_item_height"
+            android:layout_alignRight="@id/select_code_image_tip"
+            android:layout_below="@id/qrcode_image_content"
+            android:layout_marginTop="@dimen/common_space"
+            android:gravity="right|center_vertical"
+            android:text="孩子姓名" />
+
+        <EditText
+            android:id="@+id/student_name"
+            android:layout_width="@dimen/register_edit_width"
+            android:layout_height="@dimen/register_item_height"
+            android:layout_alignBottom="@id/child_name_tv"
+            android:layout_alignLeft="@id/qrcode_image_content"
+            android:maxLength="8"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/child_date_tv"
+            style="@style/normalBlackText"
+            android:layout_width="@dimen/register_text_width"
+            android:layout_height="@dimen/register_item_height"
+            android:layout_alignRight="@id/child_name_tv"
+            android:layout_below="@id/child_name_tv"
+            android:layout_marginTop="@dimen/common_space"
+            android:gravity="right|center_vertical"
+            android:text="孩子生日" />
+
+        <TextView
+            android:id="@+id/student_birthday"
+            android:layout_width="@dimen/register_select_btn_width"
+            android:layout_height="@dimen/register_item_height"
+            android:layout_alignBottom="@id/child_date_tv"
+            android:layout_alignLeft="@id/student_name"
+            android:background="@drawable/round_rect_btn"
+            android:gravity="center"
+            android:text="选择日期"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/student_card_tv"
+            style="@style/normalBlackText"
+            android:layout_width="@dimen/register_text_width"
+            android:layout_height="@dimen/register_item_height"
+            android:layout_alignRight="@id/select_code_image_tip"
+            android:layout_below="@id/child_date_tv"
+            android:layout_marginTop="20dp"
+            android:gravity="right|center_vertical"
+            android:text="学生卡"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/student_card_btn"
+            android:layout_width="@dimen/register_select_btn_width"
+            android:layout_height="@dimen/register_item_height"
+            android:layout_alignBottom="@id/student_card_tv"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/student_card_tv"
+            android:background="@drawable/round_rect_btn"
+            android:gravity="center"
+            android:text="扫描学生卡"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/student_image"
+            android:layout_width="@dimen/register_image_width"
+            android:layout_height="@dimen/register_image_height"
+            android:layout_alignLeft="@id/student_card_btn"
+            android:layout_below="@id/student_card_btn"
+            android:layout_marginTop="@dimen/common_space" />
+    </RelativeLayout>
+    <!--
+  <LinearLayout android:layout_marginTop="20dp"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content">
+	    <TextView
+	        android:text="@string/phonenum"
+	        android:layout_width="@dimen/register_text_width"
+	        android:gravity="right"
+	        android:layout_height="wrap_content"
+	        style="@style/normalBlackText" 
+	    />
+	    <EditText
+	        android:layout_marginLeft="20dp"
+	        android:layout_width="@dimen/register_edit_width"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/phone_edit"
+	        android:inputType="phone"/>     
+  </LinearLayout>
+  <Button android:id="@+id/get_vertify_num_text"
+	        android:text="@string/get_vertify_num"
+	        android:clickable="true"
+	        android:layout_marginLeft="140dp"
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:padding="5dp"
+	        android:background="@drawable/round_rect_btn"
+	        style="@style/normalBlackText" 
+	    />
+  <LinearLayout android:layout_marginTop="@dimen/common_space"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content">
+	    <TextView
+	        android:text="@string/vertify_num"
+	        android:layout_width="@dimen/register_text_width"
+	        android:gravity="right"
+	        android:layout_height="wrap_content"
+	        style="@style/normalBlackText" 
+	    />
+	    <EditText
+	        android:layout_marginLeft="20dp"
+	        android:layout_width="@dimen/register_edit_width"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/vertify_edit"
+	    />
+  </LinearLayout>
+  <Button
+	          	android:id="@+id/btn_register"
+	          	android:text="注册"
+	          	android:textColor="@android:color/white"
+            	android:textSize="20sp"
+	          	android:background="@drawable/publish_btn"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="40dp"
+	            android:layout_width="240dp"
+	        	android:layout_height="60dp" />
+    -->
+
+</ScrollView>

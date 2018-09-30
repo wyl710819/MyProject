@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+      <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/student_title_bg"
+        android:gravity="center"
+        android:text="@string/attendance_query_text"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <View android:layout_below="@id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:background="@drawable/badge_student_info_bg"/>
+    <View android:layout_below="@id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@drawable/badge_student_info"
+        android:layout_margin="10dp"/>
+    <RelativeLayout android:layout_below="@id/title_tv"
+        android:id="@+id/class_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+        <TextView
+            android:id="@+id/class_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:paddingLeft="20dp"
+            android:text="&#160;&#8201;&#160;&#160;&#8201;&#160;&#160;&#8201;&#160;班&#160;&#160;&#160;&#8201;级："
+            android:layout_alignParentBottom="true"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/class_edit_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/class_tv"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:text=""
+            android:layout_marginBottom="3dp"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_line"
+            android:layout_toRightOf="@id/class_tv"
+           
+           />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/date_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/class_rl">
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"       
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="20dp"
+            android:text="&#160;&#8201;&#160;&#160;&#8201;&#160;&#160;&#8201;&#160;日&#160;&#160;&#160;&#8201;期："      
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/date_edit_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/date_tv"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:text=""
+            android:layout_marginBottom="3dp"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_line"
+            android:layout_toRightOf="@id/date_tv"
+           />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/course_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/date_rl"
+         >
+        <TextView
+            android:id="@+id/course_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"         
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="20dp"
+            android:text="&#160;&#8201;&#160;&#160;&#8201;&#160;&#160;&#8201;&#160;课&#160;&#160;&#160;&#8201;程："
+            
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/course_edit_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/course_tv"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:text="全部"
+             android:layout_marginBottom="3dp"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_line"
+            android:layout_toRightOf="@id/course_tv"
+           />
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/student_name_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/course_rl" >
+    </ListView>
+        
+    <GridView android:visibility="gone"
+       		android:numColumns="3"
+       		android:verticalSpacing="2dp" 
+       		android:horizontalSpacing="8dp"
+            android:paddingLeft="6dp"
+        	android:paddingRight="6dp"
+        	android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/course_rl"
+            android:background="@color/white"
+            android:id="@+id/student_name_gridview"/>
+    <View
+        android:id="@+id/dropdown_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    
+    <FrameLayout
+      android:id="@+id/dropdown_fl_class"
+      android:layout_width="wrap_content"
+      android:layout_height="240dp"
+      android:layout_below="@id/class_rl"
+      android:visibility="gone" >
+
+      <ListView
+          android:id="@+id/dropdown_listview_class"
+          style="@style/badge_listview_style"/>
+    </FrameLayout>
+    <FrameLayout
+      android:id="@+id/dropdown_fl_course"
+      android:layout_width="wrap_content"
+      android:layout_height="240dp"
+      android:layout_below="@id/course_rl"
+      android:visibility="gone" >
+
+      <ListView
+          android:id="@+id/dropdown_listview_course"
+          style="@style/badge_listview_style"/>
+    </FrameLayout>
+</RelativeLayout>

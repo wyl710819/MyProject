@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >  
+    <ImageView 
+        android:id="@+id/student_img"
+        android:layout_width="45dp"
+        android:layout_height="64dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/default_student"
+        />
+    
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/student_img"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        />
+    
+    <TextView
+        android:id="@+id/points_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/student_img"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@id/name_text"
+        />
+    
+    <TextView
+        android:id="@+id/taxis_text"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="Ｘ"
+        android:textSize="18sp"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textStyle="italic"
+        android:gravity="center"
+        />
+   
+    <ImageView
+        android:id="@+id/badge_img"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/flower"
+        android:layout_toLeftOf="@id/taxis_text"
+        android:layout_centerVertical="true"
+        android:padding="12dp"
+        android:scaleType="fitXY"
+        />	
+
+</RelativeLayout>

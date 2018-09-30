@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <ImageView 
+        android:id="@+id/img_show_rado"
+        android:src="@drawable/grade_track_menu_rado"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        />
+     <ImageView 
+        android:id="@+id/img_show_zigzag"
+        android:src="@drawable/grade_track_menu_zigzag"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        />
+      <ImageView 
+        android:id="@+id/img_show_hist"
+        android:src="@drawable/grade_track_menu_hist"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        />
+</LinearLayout>

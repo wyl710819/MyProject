@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:orientation="vertical"
+    android:layout_height="66dp" >
+    <!--     android:background="@drawable/swtch_ctrl_rectangle_shape_gray" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/container"
+    	android:orientation="horizontal">
+	    <TextView 
+	        android:layout_marginLeft="10dp"
+	           android:layout_gravity="center_vertical"
+	        android:id="@+id/title"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/white"
+	        android:visibility="visible"
+	        android:textSize="22sp"/>
+	
+		<!-- <Switch
+		    android:layout_margin="5dp"
+		       android:layout_gravity="center_vertical"
+		        android:id="@+id/switchView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:switchMinWidth="20dp"
+		        android:typeface="normal"
+		        android:textOn=""
+		        android:textOff=""
+		        android:thumb="@drawable/thumb"
+		        android:track="@drawable/track" /> -->
+		
+	    <ImageView
+	        android:layout_marginRight="10dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_gravity="center_vertical"
+	        android:id="@+id/expand"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+	        android:src="@drawable/right_more_white"
+	        android:visibility="visible" />
+    </LinearLayout>
+     <View
+        android:id="@+id/divide"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"       
+        android:background="#4f4f4f"/>
+</LinearLayout>

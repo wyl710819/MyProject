@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:layout_gravity="center">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+    	android:layout_height="@dimen/pic_select_item_h"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_pic"
+        android:layout_gravity="center"
+        />
+    <CheckBox 
+        android:id="@+id/item_select"
+        android:layout_width="@dimen/select_check_box_w"
+	    android:layout_height="@dimen/select_check_box_w"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="top|end"
+        android:button="@null"
+        android:background="@drawable/checkbox_selector_tag"/>
+</FrameLayout>

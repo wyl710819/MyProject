@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/myScrollView"
+android:background="@color/white"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+  <RelativeLayout android:layout_marginTop="20dp"
+      android:paddingBottom="20dp"
+      android:focusable="true"
+	  android:focusableInTouchMode="true"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"> 
+	<!--    <TextView
+	        android:text="孩子姓名"
+	        android:layout_marginTop="@dimen/common_space"
+	        android:layout_width="@dimen/register_text_width"
+	        android:gravity="right|center_vertical"
+	        android:id="@+id/child_name_tv"
+	        android:layout_height="@dimen/register_item_height"
+	        style="@style/normalBlackText" 
+	    />
+	    <TextView
+	        android:layout_alignBottom = "@id/child_name_tv"
+	        android:layout_toRightOf="@id/child_name_tv"
+	        android:layout_width="@dimen/register_edit_width"
+	        android:layout_height="@dimen/register_item_height"
+	        android:id="@+id/student_name"
+	        android:layout_marginLeft="20dp"
+	        android:singleLine="true"
+	        style="@style/normalBlackText" 
+	    />
+	    <TextView
+	        android:text="所属班级"
+	        android:layout_marginTop="@dimen/common_space"
+	        android:layout_width="@dimen/register_text_width"
+	        android:gravity="right|center_vertical"
+	        android:id="@+id/child_class_tv"
+	        android:layout_below="@id/child_name_tv"
+	        android:layout_alignRight="@id/child_name_tv"
+	        android:layout_height="@dimen/register_item_height"
+	        style="@style/normalBlackText" 
+	    />
+	    <TextView
+	        android:layout_alignBottom = "@id/child_class_tv"
+	        android:layout_alignLeft="@id/student_name"
+	        android:layout_width="@dimen/register_edit_width"
+	        android:layout_height="@dimen/register_item_height"
+	        android:id="@+id/student_class"
+	        android:singleLine="true"
+	        style="@style/normalBlackText" 
+	    /> --> 
+	     <TextView
+	        android:text="孩子照片"
+	        android:layout_marginTop="@dimen/common_space"
+	        android:layout_width="@dimen/register_text_width"
+	        android:gravity="right|center_vertical"
+	        android:id="@+id/child_profile_tv"
+	        android:layout_height="@dimen/register_item_height"
+	        style="@style/normalBlackText" 
+	    />
+	     <ImageView  android:layout_marginLeft="20dp"
+	        android:layout_width="@dimen/register_image_width"
+	        android:layout_height="@dimen/register_image_height"
+	        android:layout_alignTop = "@id/child_profile_tv"
+	        android:layout_toRightOf="@id/child_profile_tv"
+	        android:id="@+id/student_image"
+	        android:scaleType="fitXY"
+	    />
+	    <TextView
+	        android:text="家长手机号"
+	        android:layout_marginTop="@dimen/common_space"
+	        android:layout_width="@dimen/register_text_width"
+	        android:gravity="right|center_vertical"
+	        android:layout_height="@dimen/register_item_height"
+	        android:layout_below="@id/student_image"
+	        android:layout_alignRight="@id/child_profile_tv"
+	        android:id="@+id/photo_tv"
+	        style="@style/normalBlackText" 
+	    />
+	    <TextView
+	        android:layout_alignBottom = "@id/photo_tv"
+	        android:layout_alignLeft="@id/student_image"
+	        android:layout_width="@dimen/register_edit_width"
+	        android:layout_height="@dimen/register_item_height"   
+	        style="@style/normalBlackText" 
+	        android:id="@+id/student_parentphone"/>     
+  	   <com.routon.inforelease.widget.CountdownButton android:id="@+id/get_vertify_num_text"
+	        android:text="@string/get_vertify_num"
+	        android:layout_below="@id/student_parentphone"
+	        android:layout_alignLeft="@id/student_parentphone"
+	        android:clickable="true"
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:padding="10dp"
+	        android:background="@drawable/round_rect_btn"
+	        style="@style/normalBlackText" 
+	    />
+	    <TextView  android:layout_below="@id/get_vertify_num_text"
+	        android:id="@+id/vertify_tv"
+	        android:text="@string/vertify_num"
+	        android:layout_marginTop="@dimen/common_space"
+	        android:layout_width="@dimen/register_text_width"
+	        android:gravity="right|center_vertical"
+	        android:layout_height="@dimen/register_item_height"
+	        android:layout_alignRight="@id/photo_tv"
+	        style="@style/normalBlackText"/> 
+	    <EditText android:layout_toRightOf="@id/vertify_tv"      
+	        android:layout_alignTop="@id/vertify_tv"  
+	        android:layout_marginLeft="20dp"
+	        android:layout_width="@dimen/register_edit_width"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/vertify_edit"
+	    />
+  </RelativeLayout>
+</ScrollView>

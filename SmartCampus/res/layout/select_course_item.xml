@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:background="@drawable/selectcourse_item_bg" >
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft ="10dp"
+        android:textColor="#24a0d0"
+        android:textStyle="bold"
+        android:textSize="16dp"
+    />
+        <TextView
+        android:id="@+id/desc"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft ="10dp"
+        android:textColor="#999999"
+        android:textSize="13dp"
+    />
+        <ImageView
+            android:id = "@+id/timeimg"
+            android:layout_below="@id/desc"
+            android:layout_width ="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="10dp"
+			android:layout_marginTop="10dp"
+            android:src="@drawable/icon_date"
+            />
+        <TextView
+            android:id="@+id/selecttime"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/timeimg"
+            android:layout_below="@id/desc"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:textSize ="15dp"
+            android:textColor="#666666"/>
+        <ImageView
+            android:id="@+id/selectpeopleimg"
+            android:layout_width ="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@id/timeimg"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="7dp"
+			android:src="@drawable/icon_person"/>
+
+        <TextView
+            android:id="@+id/peoplecount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeimg"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop ="7dp"
+            android:layout_toRightOf="@id/selectpeopleimg"
+            android:textColor="#666666"
+            android:textSize="15dp" />
+
+        <Button 
+            android:id="@+id/selectBtn"
+            android:layout_width="73dp" 
+            android:layout_height="27dp"
+            android:textColor="#ffffff"
+            android:textSize="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+
+            android:background="@drawable/shape_select_btn"
+            />
+        <ImageView
+            android:id="@+id/selectedImg"
+            android:layout_width="65dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop ="7dp"
+         
+            android:visibility="gone"
+            />
+        
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <com.routon.smartcampus.gradetrack.GradeTrackTitle
+        android:id="@+id/zigzag_pic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.routon.smartcampus.view.ZigzagLineView 
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:id="@+id/zigzagline_view"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/zigzag_pic_title"
+        />
+
+</RelativeLayout>

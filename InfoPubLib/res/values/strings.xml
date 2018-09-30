@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">信息发布</string>
+    <string name="login_username_hint">手机号/用户名</string>
+    <string name="login_label_password">密码</string>
+    <string name="ensure_register_pwd">确认密码</string>
+    <string name="login_label_signin">登  录</string>
+    <string name="forget_passwd"><u>忘记密码</u></string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="loading">正在登录...</string>
+    <string name="session_invalid_msg">登录失效，已重新登录，请重新获取数据</string>
+    <string name="name_is_not_empty">用户名不能为空！</string>
+    <string name="password_is_not_empty">密码不能为空！</string>
+    <string name="newpwd">新密码</string>
+    <string name="confirmnewpwd">确认新密码</string>
+    <string name="hint_input_pwd">4-8位数字字母</string>
+    <string name="newpwd_cannot_be_empty">请输入新密码</string>
+    <string name="newpwd_is_not_equal">两次输入的新密码不一致</string>
+    <string name="modify_pwd_success">修改密码成功,请重新登录！</string>
+    <string name="modify_pwd_failed">修改密码失败</string>
+    <string name="logout_success">注销成功,请重新登录!</string>
+    <string name="network_failed">当前网络未连接，请检查网络状况！</string>
+    <string name="get_vertify_num_failed">获取验证码错误</string>
+    <string name="vertify_num_failed">验证码错误</string>
+    <string name="vertify_num_success">验证码正确</string>
+    <string name="vertify_num_is_empty">验证码为空</string>
+    <string name="click_vertify_num">请先获取手机验证码</string>
+    <string name="modify_data_success">修改用户数据成功</string>
+    <string name="modify_data_failed">修改用户数据失败</string>
+    <string name="data_is_null">输入数据不能为空！</string>
+    <string name="install_space">安装地点</string>
+    <string name="install_position">安装位置</string>
+    <string name="olsstate">状态</string>
+    <string name="scan_title">智慧屏二维码</string>
+    <string name="termodedetail">智慧屏详情</string>
+    <string name="termodealias">智慧屏型号</string>
+    <string name="termodetype">智慧屏类型</string>
+    <string name="logintime">智慧屏登录时间</string>
+    <string name="terminal_id">智慧屏ID</string>
+    <string name="add_terminal">添加智慧屏</string>
+    <string name="menu_terminal_text">智慧屏</string>
+    <string name="terminal_list_title">智慧屏列表</string>
+    <string name="not_sel_terminal">未指派智慧屏！</string>
+    <string name="terminal_assign_success">指派智慧屏成功！</string>
+    <string name="terminal_assign_failed">指派智慧屏失败！</string>
+    <string name="termodesoftver">软件版本</string>  
+    <string name="lastcomutime">最近通信时间</string>
+    <string name="firstcommtime">首次通信时间</string>
+    <string name="onofftime">工作日开关机时间</string>
+    <string name="holidayonofftime">节假日开关机时间</string>
+    
+    <string name="all">全部</string>
+    <string name="online">在线</string>
+    <string name="offline">离线</string>
+    <string name="load_more">加载更多...</string>
+    
+    <string name="group_name">分 组</string>
+    <string name="userinfo">用户信息</string>
+    <string name="softver">版本</string>
+    <string name="about">关于</string>
+    <string name="realname">昵称</string>
+    <string name="email">邮箱</string>
+    <string name="address">地址</string>
+    <string name="profilephoto">头像</string>
+    <string name="modifypwd">修改密码</string>
+    <string name="help">帮助说明</string>
+    <string name="clearcache">清空缓存</string>
+    <string name="clearcache_success">清空缓存成功</string>
+    <string name="username">用户名</string>
+    <string name="phonenum">手机号</string>
+    <string name="get_vertify_num">获取验证码</string>
+    <string name="vertify_num">验证码</string>
+    <string name="vertify_time">倒计时</string>
+    <string name="bind_phone_num">请绑定手机号</string>
+    <string name="del_user_success">删除用户成功</string>
+    <string name="del_user_failed">删除用户失败</string>
+    <string name="bind_phone_failed">绑定手机号码失败</string>
+    <string name="bind_phone_success">绑定手机号码成功</string>
+    
+    <string name="user_list_title">用户列表</string>
+    
+    <string name="menu_classinfo_text">内容库</string>
+    <string name="menu_snotice_text">滚动字幕</string>
+    <string name="menu_school_dynamic">班级动态</string>
+    <string name="menu_user_text">用户</string>
+    <string name="menu_group_text">分组</string>
+    <string name="menu_bluetooth_text">蓝牙遥控器</string>
+    <string name="menu_program_text">内容库</string>
+    <string name="menu_source_text">素材</string>
+    <string name="menu_setting_text">设置</string>
+    <string name="menu_change_group">智慧屏更换班级</string>
+    <string name="menu_exit_text">退出</string>
+    <string name="setting">设置</string>
+    <string name="userlistmanager">管理员控制</string>
+    <string name="groupmanager">分组管理</string>
+    <string name="add_plan">节目新建</string>
+    <string name="add_pic_plan">图片素材</string>
+    <string name="add_text_plan">文字素材</string>
+    <string name="add_notice">内容发布</string>
+    <string name="mine_pics">我的素材</string>
+    <string name="other_pics">所有素材</string>
+    <string name="online_pics">在线素材</string>
+    <string name="local_pics">本地素材</string>
+    <string name="add_pics">新增素材</string>
+    <string name="pictures_select_title">选择图片</string>
+    <string name="texts_select_title">选择文字</string>
+    <string name="publish_team_select_title">选择投放分组</string>
+    <string name="complate_and_publish_title">完成发布</string>
+    <string name="del_materials_susccess">"删除素材成功!"</string>
+    <string name="del_materials_1">"没有选中素材!"</string>
+    <string name="complate_program_success">创建节目计划成功!</string>
+    <string name="publish_now">立即发布</string>
+    <string name="program_name_title">计划名称</string>
+    <string name="pics_title">图片</string>
+    <string name="text_title">文字</string>
+    <string name="group_title">分组</string>
+    <string name="pices1">张</string>
+    <string name="pices2">条</string>
+    <string name="pices3">组</string>
+    <string name="realname_is_not_empty">昵称不能为空！</string>
+    <string name="plan_list">内容列表</string>
+    <string name="plan_name">计划名称: </string>
+    <string name="plan_begin_time">起始时间: </string>
+    <string name="plan_end_time">结束时间: </string>
+    <string name="plan_throw">发布</string>
+    <string name="plan_edit">编辑</string>
+    <string name="plan_del">删除</string>
+    <string name="image_attribute_setting">图片节目设置</string>
+    <string name="text_attribute_setting">文字节目设置</string>
+    <string name="begin_time">起始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="elapse_time">时长(秒)</string>
+    <string name="display_effect">显示效果</string>
+    <string name="text_color">字体颜色</string>
+    <string name="text_bg_color">背景颜色</string>
+    <string name="text_bg_alpha">背景透明度(0-255)</string>
+    <string name="play_time_setting">播放时段设置</string>
+    <string name="time_add">新增</string>
+    <string name="start_time">开始时间</string>
+    <string name="repeat_times">重复次数</string>
+    <string name="max_repeat_times">最大次数</string>
+    <string name="plan_time">时段</string>
+    <string name="pics_ad_edit">图片节目编辑</string>
+    <string name="text_ad_edit">文字节目编辑</string>
+    <string name="pics_ad_view">图片节目查看</string>
+    <string name="text_ad_view">文字节目查看</string>
+    <string name="change_contract_name">请输入计划名称</string>
+    <string name="change_plan_name">计划名称修改</string>
+    <string name="plan_detail">节目计划</string>
+    <string name="offline_publish_title">离线节目</string>
+    <string name="select_all">全选</string>
+    <string name="unselect">取消选中</string>
+    <string name="add_material">新增</string>
+    <string name="attr_setting">属性</string>
+    <string name="time_setting">时段</string>
+    <string name="delete_ad">删除</string>
+    <string name="prompt_no_pics_ads">没有图片广告</string>
+    <string name="prompt_no_text_ads">没有文字广告</string>
+    <string name="prompt_no_select_ads">请至少选择一个广告</string>
+    <string name="add_time">新增</string>
+    <string name="add_material_title_tip">素材名称:</string>
+    <string name="no_text_error">没有输入文字信息!</string>
+    <string name="add_text">"添加素材"</string>
+    <string name="add_pics_title">选择添加图片</string>
+    <string name="preview_pics_title">图片预览</string>
+    <string name="no_pics_error">没有选中任何图片!</string>
+    <string name="abount_text_1">"信息发布"</string>
+    <string name="abount_text_2">"别致科技出品"</string>
+    <string name="publish_finished">广告下发成功</string>
+    <string name="create_childgroup">新建子分组</string>
+    <string name="delete_group">删除分组</string>
+    <string name="delete_group_failed">删除分组失败！</string>
+    <string name="delete_group_success">删除分组成功！</string>
+    <string name="add_group_failed">新建分组失败！</string>
+    <string name="add_group_success">新建分组成功！</string>
+    <string name="rename_group_failed">修改分组名称失败！</string>
+    <string name="rename_group_success">修改分组名称成功！</string>
+    <string name="delete_confirm_group_msg">确认删除分组</string>
+    <string name="rename_group">修改分组名称</string>
+    <string name="user_create_failed">用户新建失败!</string>
+    <string name="user_create_success">用户新建成功!</string>
+    <string name="modify_assign_failed">修改用户指派失败!</string>
+    <string name="modify_assign_success">修改用户指派成功!</string>
+    <string name="user_create">用户新建</string>
+    <string name="user_edit">用户编辑</string>
+    <string name="reset_pwd">重置密码</string>
+    <string name="delete_confirm_user_msg">确认删除用户？</string>
+    <string name="reset_pwd_msg">确认重新设置密码为默认密码？</string>
+    <string name="sel_empty_group">未选中任何分组</string>
+    <string name="phone_must"> <Data><![CDATA[手机号<font color="#ff0000"><b>*</b></font>]]></Data></string>
+    <string name="username_must"> <Data><![CDATA[用户名<font color="#ff0000"><b>*</b></font>]]></Data></string>
+	<string name="realname_must"> <Data><![CDATA[昵称<font color="#ff0000"><b>*</b></font>]]></Data></string>
+	<string name="group_must"> <Data><![CDATA[分组<font color="#ff0000"><b>*</b></font>]]></Data></string>
+		
+	<!-- snotice -->
+	<string name="snotice_add">新增</string>
+	<string name="snotice_edit">编辑</string>
+	<string name="snotice_del">删除</string>
+	
+	<string name="scan_qrcode">请扫描终端屏幕上的二维码!</string>    
+    <string name="scan_error">获取蓝牙地址失败，请重新扫描二维码!</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_ok">确定</string>
+    <string name="add_text_to_picture">添加文字</string>
+    <string name="add_picture">添加图片</string>
+    <string name="delete">删除</string>
+    <string name="modify">修改</string>
+    <string name="rotate">旋转</string>
+    <string name="color">颜色</string>
+    <string name="review">预览</string>
+    <string name="pass">通过</string>
+    <string name="passnot">不通过</string>
+    
+    <string name="menu_next_step">下一步</string>
+    <string name="menu_finish">完成</string>
+    <string name="menu_save">保存</string>
+    
+    <string name="modify_all">适用于所有图片广告</string>
+    <string name="modify_all_text">适用于所有文字广告</string>
+    <string name="no_ads">没有内容</string>
+     
+    <string name="scroll_text_must"><Data><![CDATA[滚动字幕<font color="#ff0000"><b>*</b></font>]]></Data></string>
+    <string name="publish_group_must"><Data><![CDATA[发布分组<font color="#ff0000"><b>*</b></font>]]></Data></string>
+    <string name="starttime_must"><Data><![CDATA[起始时间<font color="#ff0000"><b>*</b></font>]]></Data></string>
+    <string name="endtime_must"><Data><![CDATA[结束时间<font color="#ff0000"><b>*</b></font>]]></Data></string>
+    
+    <string name="menu_preview">预览</string>
+    <string name="menu_edit">编辑</string>
+    <string name="menu_add">添加</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_attribute">属性</string>
+    <string name="menu_timesetting">时段</string>
+    <string name="menu_more">></string>
+    <string name="menu_frontmove">前移</string>
+    <string name="menu_backmove">后移</string>
+        
+    <string name="caramNotifyMsg">需要打开摄像头功能及读取本地相册的权限！</string>
+</resources>

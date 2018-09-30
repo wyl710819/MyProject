@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/remark_item_text"
+        android:orientation="horizontal" 
+        android:padding="5dp"
+        >
+        <RelativeLayout 
+            android:id="@+id/Re_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            >
+        <CheckBox   
+	       	android:id="@+id/remark_item_checkbox"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+	        android:layout_alignParentLeft="true"  
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="2dp"
+	        android:focusable="false"
+	        android:clickable="false"
+	        android:button="@drawable/remark_check_sel" 
+         />  
+       <TextView 
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_toRightOf="@id/remark_item_checkbox"
+            android:id="@+id/remark_item_badgetitle"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+       <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/remark_item_integral"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:textColor="@color/text_green_color"
+            />
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/remark_item_badgeremark"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/remark_item_badgetitle"
+            android:layout_toRightOf="@id/remark_item_checkbox"
+            android:textSize="16sp"
+            />
+            
+        </RelativeLayout>
+       
+        <RelativeLayout
+	    android:id="@+id/add_remark_rl"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:visibility="gone">
+	    <ImageView
+            android:id="@+id/item_add_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/select_add" />
+
+        <TextView
+            android:id="@+id/item_add_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/item_add_img"
+            android:text="添加或修改评语"
+            android:textColor="#786b62"
+            android:textSize="18sp" />
+	     <ImageView 
+	         android:layout_width="80dp"
+	         android:layout_height="80dp"
+	         android:id="@+id/add_badge_remark_iv"
+	         android:src="@drawable/empty_photo"
+	         android:layout_alignParentRight="true"
+	         android:layout_centerVertical="true"
+	         android:layout_margin="5dp"
+	         android:padding="5dp"
+	         /> 
+	          <View 
+           android:layout_width="match_parent"
+           android:layout_height="0.2dp"
+           android:layout_alignParentBottom="true"
+           android:background="@color/gray"
+           />
+	</RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/ll_delete_ll_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="#FF4500"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/del_remark_normal" />
+
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textColor="#fff"
+                android:textSize="16sp" /> -->
+        </LinearLayout>
+  		
+           <!--  <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/add_badge_remark_tv"
+	            android:text="+添加评论和备注" 
+	            android:textSize="18sp"
+	            android:textColor="#666666"
+	            android:layout_centerVertical="true"
+	            android:layout_margin="20dp"
+	            android:visibility="gone"
+            />
+	     <ImageView 
+	         android:layout_width="80dp"
+	         android:layout_height="80dp"
+	         android:id="@+id/add_badge_remark_iv"
+	         android:src="@drawable/empty_photo"
+	         android:layout_alignParentRight="true"
+	         android:layout_centerVertical="true"
+	         android:layout_margin="5dp"
+	         android:padding="5dp"
+	         android:visibility="gone"
+	         />  -->
+    </LinearLayout>
+     
+
+ 
+

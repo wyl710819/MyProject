@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/desc_llayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="40dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rect_bg" >
+
+                <RelativeLayout
+                    android:id="@+id/subtitle_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:text="＋添加滚动字幕"
+                        android:textColor="@color/gray"
+                         android:gravity="center"
+                        android:textSize="@dimen/create_bottom_button_text_size" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/plan_edit_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subtitle_add"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </RelativeLayout>
+            
+             <com.routon.inforelease.widget.SettingItem  
+        		android:layout_below="@id/line_view"
+        		android:visibility="gone"
+        		android:id="@+id/groupitem"  
+        		android:layout_width="match_parent"  
+        		android:layout_height="wrap_content"/> 
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/add_pic"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rect_bg" >
+                    
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="＋添加图片"
+                        android:textColor="@color/gray"
+                        android:gravity="center"
+                       
+                        android:textSize="@dimen/create_bottom_button_text_size" />
+                    
+                  </RelativeLayout>
+                
+                 
+                 
+                <com.routon.inforelease.widget.PlanPreviewView
+                    android:id="@+id/plan_edit_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center"
+                    
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/horizontal_menu_child_default" />
+
+               <!--  <com.routon.inforelease.widget.AutoScrollTextView
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/previewMsgTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="28dp"
+                    
+                    android:background="#33CCCCCC"
+                    android:inputType="text"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30px" >
+                </com.routon.inforelease.widget.AutoScrollTextView> -->
+                
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

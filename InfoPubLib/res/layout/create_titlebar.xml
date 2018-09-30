@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_h"
+    android:background="@drawable/shape_blue_gradient"
+    android:layout_gravity="center_vertical">
+    
+    <ImageButton 
+        android:id="@+id/back_btn"
+        android:layout_width="@dimen/title_bar_btn_w"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/back"
+        android:background="@drawable/ic_bg"
+        android:scaleType="center"
+        android:layout_centerVertical="true"
+        />
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     	android:textAppearance="@style/createTitle"
+        android:gravity="center"/>
+    
+    <ImageButton 
+        android:id="@+id/next_step"
+        android:layout_width="@dimen/title_bar_btn_w"
+        android:layout_height="match_parent" 
+        android:layout_alignParentRight="true"
+        android:src="@drawable/next"
+        android:visibility="gone"
+        android:background="@drawable/ic_bg"
+        android:scaleType="center"
+        android:layout_centerVertical="true"/>
+    <Button  
+        android:id="@+id/next_step_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" 
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@drawable/ic_bg"
+        android:scaleType="center"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

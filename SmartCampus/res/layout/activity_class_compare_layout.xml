@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/compare_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/schoolcompare_title" />
+
+    <com.routon.smartcampus.view.WeekCalendarView
+        android:id="@+id/weekCalendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compare_title_layout"
+        android:layout_marginTop="3dp" >
+    </com.routon.smartcampus.view.WeekCalendarView>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddd"
+        android:layout_marginTop="3dp"
+        android:id="@+id/line_view"
+        android:layout_below="@+id/weekCalendarView"
+        />
+
+    
+    <ListView
+        android:id="@+id/lv_grade_compare_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_view" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+    </ListView>
+
+</RelativeLayout>

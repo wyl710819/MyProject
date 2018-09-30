@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="gray">#7e7e7e</color>
+    <color name="lightgray">#cccccc</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#2B91DF</color>
+    <color name="red">#C87978</color>
+    <color name="black">#000000</color>
+    <color name="text_grey">#676767</color>
+    <color name="line_color">#7e7e7e</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="student_bottom_sel_color">#159ABB</color>
+    <color name="student_bottom_color">#767676</color>
+    <color name="color_gray_light">#99C9C9C9</color>
+    <color name="rippelColor">#ffffffff</color>
+    <color name="title_bag_color">#19B0ED</color>
+    <color name="text_yellow_color">#FEBD0E</color>
+    <color name="text_green_color">#33B014</color>
+    <color name="badgetype_listview_color">#F6EFBE</color>
+    <color name="course_win_dark_bg_color">#FCD24A</color>
+    <color name="course_win_light_bg_color">#FAEF9B</color>
+    <color name="course_win_text_color">#65340B</color>
+    <color name="flower_list_light_color">#F0F0F0</color>
+    <color name="homework_text_color">#b94645</color>
+    <color name="homework_text_grey">#676767</color>
+    <color name="homework_title_color">#EBE5D9</color>
+    <color name="homework_list_bag_color">#CAA796</color>
+    <color name="arrow_text_grey">#aaaaaa</color>
+    <color name="text_red">#FF0000</color>
+    <color name="scroll_picker_grey">#bbbbbb</color>
+    <color name="homework_green">#3bbb31</color>
+    <color name="often_badge_red">#EC3838</color>
+    <color name="background">#FFFFFF</color>
+    <color name="split_line">#11112233</color>
+    <color name="text1">#18b1ed</color>
+    <color name="text2">#333333</color>
+    <color name="color1">#F0F0F0</color>
+    <color name="color2">#FFFFFF</color>
+    <color name="color3">#B0B0B0</color>
+    <color name="color4">#666666</color>
+    <color name="color5">#57C5E8</color>
+
+     <color name="leave_text_red">#fd2222</color>
+     <color name="leave_text_green">#11bb0c</color>
+     <color name="leave_text_grey">#999999</color>
+</resources>

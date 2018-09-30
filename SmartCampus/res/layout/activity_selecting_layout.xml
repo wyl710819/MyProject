@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop = "10dp"
+        android:textColor="#666666"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop = "10dp"
+        android:textColor="#999999"
+        android:textSize="13dp" />
+
+
+            <TextView
+        android:id="@+id/pictext"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selectpic"
+        android:gravity="center_horizontal|bottom"
+        android:text="6选3"
+        android:textColor="#24a0d0"
+        android:textSize="18dp" />
+<RelativeLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="#FFFFFF" >
+            
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:gravity="center_horizontal"
+        android:text="从下面学科中选出3门"
+        android:textColor="#999999"
+        android:textSize="15dp" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_below="@id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginRight="74dp"
+        android:layout_centerHorizontal="true"
+        android:verticalSpacing="40dp"
+        android:numColumns="2" />
+    
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="293dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/gridview"
+        android:layout_marginTop="67dp"
+        android:text="提交选课结果"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selectcourse_btn_bg"
+        android:gravity="center"
+        />
+</RelativeLayout>
+</LinearLayout>

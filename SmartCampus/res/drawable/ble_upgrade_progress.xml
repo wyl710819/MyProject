@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"> 
+ <!--背景色-->  
+    <item android:id="@android:id/background">  
+        <shape>  
+            <corners android:radius="5dip" />  
+  
+            <solid android:color="@color/gray" />  
+        </shape>  
+    </item>  
+<!--一级进度条的颜色，也可以直接替换成图片-->  
+    <item android:id="@android:id/progress">  
+        <clip>  
+            <shape>  
+                <corners android:radius="5dip" />  
+  
+                <solid android:color="@color/blue" />  
+            </shape>  
+        </clip>  
+    </item>  
+16</layer-list> 

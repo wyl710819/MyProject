@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:descendantFocusability="beforeDescendants"
+      >
+    
+ <TextView
+        android:id="@+id/marking_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        />
+     
+      <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="0"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:gravity="center"
+        />
+      
+      <EditText
+          android:id="@+id/inputScore"
+          android:layout_width="90dp"
+          android:layout_height="40dp"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="35dp"
+          android:textSize="20sp"
+          android:inputType="numberSigned|numberDecimal"
+          android:layout_centerVertical="true"
+          android:gravity="center"
+          android:cursorVisible="true"
+		  android:textCursorDrawable="@null"
+          android:background="@drawable/teahcer_course_blue_root_rectangle_shape"
+         />
+      <View android:layout_width="0dip" android:layout_height="0dip" android:focusableInTouchMode="true" android:imeOptions="actionNext"/>
+      <!-- <com.routon.smartcampus.view.StringScrollPicker 
+          android:layout_width="140dp"
+          android:layout_height="30dp"
+          android:id="@+id/scroll_picker"
+          android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        app:spv_disallow_intercept_touch="true"
+        app:spv_is_circulation="true"
+        app:spv_orientation="horizontal"
+        app:spv_max_text_size="24dp"
+          app:spv_min_text_size="20dp"
+          app:spv_alignment="center"
+            app:spv_visible_item_count="5"
+            android:layout_centerVertical="true"
+          /> -->
+      <TextView
+        android:id="@+id/average_text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        />
+</RelativeLayout>

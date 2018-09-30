@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/leave_title_rl"
+        android:background="#20AEEA"
+        >
+        <ImageView 
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/leave_back_btn"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:padding="12dp"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的请假"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            />
+        <ImageView 
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/leave_add_btn"
+            android:src="@drawable/ic_add"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"
+            android:layout_marginRight="8dp"
+            />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leave_statistics_rl"
+        android:layout_below="@id/leave_title_rl"
+        android:layout_margin="15dp"
+        android:background="@drawable/shape_leave_bg"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/leave_statistics_title"
+            android:text="本学期请假/出差统计"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#18b1ed"
+            android:layout_margin="15dp"
+            android:layout_centerHorizontal="true"
+            />
+       
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/leave_count_tv"
+            android:layout_below="@id/leave_statistics_title"
+            android:textSize="16sp"
+            android:text="请假：0次   共计 0时0分"
+             android:layout_marginLeft="15dp"
+              android:layout_marginBottom="10dp"
+            />
+        
+        <View  
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/leave_count_tv"
+            android:background="#ededed"
+            />
+        
+         <TextView 
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/evection_count_tv"
+            android:layout_below="@id/leave_count_tv"
+            android:textSize="16sp"
+            android:text="出差：0次   共计 0时0分"
+            android:layout_marginTop="10dp"
+             android:layout_marginLeft="15dp"
+              android:layout_marginBottom="10dp"
+            />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/leave_list_rl"
+        android:layout_below="@id/leave_statistics_rl"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_leave_bg"
+        >
+        <ListView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/leave_listview"
+            android:layout_margin="5dp"
+            />
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

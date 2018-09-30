@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    >
+    <RelativeLayout 
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        >
+         <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/couser_item_time"
+        android:text="2018-6-24 8:00~8:40"
+        android:textColor="#666666"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/couser_replace_item_couser"
+        android:text="二（一）班 英语课 张三老师代课"
+        android:textSize="16sp"
+        android:layout_marginLeft="8dp"
+         android:layout_marginRight="2dp"
+          android:layout_marginBottom="10dp"
+         android:layout_marginTop="5dp"
+        android:textColor="#666666"
+        android:layout_below="@id/couser_item_time"
+        />
+        
+    </RelativeLayout>
+   
+
+    
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacher_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:text="代课老师"
+        android:textSize="14sp"
+        android:textColor="#11bb0c"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="@drawable/shape_leave_btn_bg"
+        
+        />
+    
+</LinearLayout>

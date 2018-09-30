@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_h"
+        android:background="@drawable/shape_blue_gradient" >
+
+        <ImageView
+            android:id="@+id/img_absence_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="缺勤查询"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_class_absence_info_back"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/img_absence_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_canlendar" />
+
+        <ImageView
+            android:id="@+id/img_absence_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img_absence_calendar"
+            android:layout_below="@id/img_absence_calendar"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_class" />
+
+        <ImageView
+            android:id="@+id/img_absence_absence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/img_absence_calendar"
+            android:layout_below="@id/img_absence_class"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_absence" />
+
+        <TextView
+            android:id="@+id/tv_absence_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_absence_calendar"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/img_absence_calendar"
+            android:text="日期"
+            android:textColor="#999999"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_absence_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_absence_class"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/img_absence_class"
+            android:text="课程"
+            android:textColor="#999999"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_absence_absence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_absence_absence"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/img_absence_absence"
+            android:text="缺勤"
+            android:textColor="#999999"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_absence_calendar_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_absence_calendar"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/tv_absence_calendar"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_absence_class_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_absence_class"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/tv_absence_class"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_absence_absence_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_absence_absence"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/tv_absence_absence"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_absence_calendar_tag"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_absence_calendar"
+            android:background="#999999" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_absence_class_tag"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tv_absence_calendar"
+            android:background="#999999" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_absence_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:numColumns="3" />
+
+</LinearLayout>

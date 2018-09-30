@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <com.routon.smartcampus.answerrelease.AnsTimeLineChartView
+	     android:id="@+id/time_lineView"
+	     android:layout_width="350dp"
+	     android:layout_height="240dp"
+	    />
+
+</LinearLayout>

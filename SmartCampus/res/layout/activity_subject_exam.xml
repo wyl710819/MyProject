@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aea097">
+    <com.routon.smartcampus.gradetrack.GradeTrackTitle
+        android:id="@+id/subject_exam_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <ListView 
+        android:id="@+id/list_subject_exam"
+        android:layout_below="@id/subject_exam_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#bcb1a1"
+        android:dividerHeight="1dp"
+        android:background="@drawable/list_subject_exam"
+        android:layout_margin="15dp"></ListView>
+     <View
+        android:id="@+id/dropdown_mask_subject_exam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />  
+	 <FrameLayout
+      	android:id="@+id/dropdown_grade_class"
+      	android:layout_width="150dp"
+     	android:layout_height="200dp"
+      	android:layout_below="@id/subject_exam_title"
+      	android:layout_alignRight="@id/subject_exam_title"
+      	android:visibility="gone" 
+      	android:layout_marginRight="11dp">
+
+      <ListView
+          android:id="@+id/list_grade_class"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:background="#EAE4D9"
+          android:visibility="gone"/>
+    </FrameLayout>
+</RelativeLayout>

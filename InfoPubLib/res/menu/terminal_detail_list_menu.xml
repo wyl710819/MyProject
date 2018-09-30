@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/btn_terminal_class_list" android:title="内容" />
+    <item android:id="@+id/btn_terminal_class_info_list" android:title="滚动字幕" />
+</menu>

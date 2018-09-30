@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white">
+    
+    <com.routon.smartcampus.view.AnswerScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            >
+            <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_text"
+        android:text="标题"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textSize="20sp"
+        android:textColor="#ff3939"
+        android:layout_toRightOf="@id/title_text"
+        />
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify_title_edit_view"
+        android:layout_below="@id/title_text"
+        android:background="@null"
+        android:textSize="18sp"
+        android:hint="请输入通知标题"
+        android:textColorHint="#cccccc"
+        android:textColor="#666666"
+        android:layout_marginTop="5dp"
+        android:maxLength="32"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/hline_view"
+        android:layout_below="@id/notify_title_edit_view"
+        android:background="#999999"
+        android:layout_marginTop="8dp"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/content_text"
+        android:text="内容"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:layout_below="@id/hline_view"
+        android:layout_marginTop="10dp"
+        />
+    
+     <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notify_content_edit_view"
+        android:layout_below="@id/content_text"
+        android:background="@null"
+        android:textSize="18sp"
+        android:hint="请输入通知内容"
+        android:textColorHint="#cccccc"
+        android:textColor="#666666"
+        android:layout_marginTop="5dp"
+        android:maxLength="265"
+        />
+     
+     <com.routon.smartcampus.view.HorizontalListView
+         android:layout_width="wrap_content"
+         android:layout_height="110dp"
+         android:id="@+id/add_pic_gridView"
+         android:layout_below="@id/notify_content_edit_view"
+         android:layout_marginTop="120dp"
+         android:layout_alignParentLeft="true"
+         />
+     
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/hline2_view"
+        android:layout_below="@id/add_pic_gridView"
+        android:background="#999999"
+        android:layout_marginTop="15dp"
+        />
+     
+     <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="需要家长确认"
+         android:textColor="#333333"
+         android:textSize="20sp"
+         android:layout_below="@id/hline2_view"
+         android:layout_marginTop="10dp"
+         />
+
+     <Switch 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/switch_view"
+         android:layout_below="@id/hline2_view"
+         android:layout_marginTop="10dp"
+         android:layout_alignParentRight="true"
+         android:switchMinWidth="20dp"
+         android:textOn="  "
+         android:textOff="  "
+         android:thumb="@drawable/notify_thumb"
+         android:track="@drawable/notify_track"
+         android:layout_marginBottom="40dp"
+         />
+            
+        </RelativeLayout>
+        
+    </com.routon.smartcampus.view.AnswerScrollView>
+    
+</RelativeLayout>

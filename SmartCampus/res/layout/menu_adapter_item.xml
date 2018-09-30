@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="@dimen/setting_item_height"
+    android:layout_gravity="center_vertical">
+	  <ImageView
+        android:id="@+id/menu_show"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/menu_show"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/info_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"     
+        android:visibility="gone"
+        android:layout_toRightOf="@id/menu_show"
+        android:layout_marginLeft ="@dimen/setting_item_padding"/>
+    <TextView android:layout_marginLeft ="@dimen/setting_item_padding"
+        android:id="@+id/name"
+        style="@style/normalBlackText"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true" 
+        android:maxWidth="200dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/info_img"/>
+    <TextView
+        android:id="@+id/info"
+        style="@style/normalGrayText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/right_info_margin_right"
+        android:adjustViewBounds="true"
+        android:maxLines="2"
+        android:maxWidth="180dp" />
+    <ImageView
+        android:id="@id/drag_handle"
+        android:scaleType="fitXY"
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="4dp"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/right_icon_margin_right"
+        android:src="@drawable/menu_sort"
+        android:visibility="invisible" />
+    <ImageView
+        android:id="@+id/infoicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/right_icon_margin_right"
+        android:src="@drawable/more"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp">
+    <ImageView
+        android:id="@+id/avator"
+        android:layout_marginTop="4dp"
+        android:layout_width="@dimen/recentissued_avator_w"
+        android:layout_height="@dimen/recentissued_avator_h"
+        android:src="@drawable/default_student" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avator"
+        android:textColor="@color/gray"
+        android:layout_marginTop="6dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="张三" />
+    <TextView
+        android:id="@+id/agency_tv"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="代理人颁发" />
+     <RelativeLayout android:id="@+id/above_content"
+        android:layout_toRightOf="@id/avator"
+        android:layout_marginLeft="10dp"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/flowerImage"
+        android:layout_width="@dimen/list_view_flower_image_width"
+        android:layout_height="@dimen/list_view_flower_image_height"
+        android:layout_alignParentRight="true"/>
+      
+    <ImageView
+        android:id="@+id/cardImage"
+        android:layout_width="@dimen/list_view_card_image_width"
+        android:layout_height="@dimen/list_view_card_image_height"
+        android:layout_toLeftOf="@id/flowerImage"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/phone_issue_flag"/>
+    <TextView
+        android:id="@+id/GradeTv"
+        android:layout_width="@dimen/list_view_flower_image_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flowerImage"
+        android:layout_marginTop="0dp"
+        android:layout_alignLeft="@id/flowerImage"
+        android:gravity="center_horizontal"
+        android:text="+10"/>
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="80dp"
+   		android:gravity="center"
+   		android:textSize="14sp"
+   		android:textColor="@color/white"
+        android:layout_height="@dimen/list_view_flower_cancel_btn_height"
+        android:layout_alignLeft="@id/flowerImage"
+        android:layout_below="@id/GradeTv"
+        android:text="@string/revoke"
+        android:background="@drawable/cancel_btn_bg" />
+    
+    <TextView
+        android:id="@+id/time"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@id/flowerImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:text="2017-9-16" />
+        
+    <RelativeLayout
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+   		android:visibility="gone"
+        android:layout_height="@dimen/list_view_flower_add_btn_height"
+        android:layout_below="@id/time"
+        android:layout_marginTop="@dimen/list_view_flower_common_margin"
+        android:layout_alignLeft="@id/time"
+        android:layout_alignRight="@id/time"
+        android:background="@drawable/black_rectangle_shape" >
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/list_view_flower_common_margin"
+        android:text="+添加评论和备注" /> 
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/list_view_flower_common_margin"
+        android:layout_width="@dimen/list_view_flower_pic_w"
+        android:layout_centerVertical="true"
+        android:layout_height="@dimen/list_view_flower_pic_h"
+        android:src="@drawable/empty_photo" /> 
+     </RelativeLayout>
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="@dimen/list_view_flower_common_margin"
+        android:layout_alignLeft="@id/time"
+        android:layout_alignRight="@id/time"/>
+    </RelativeLayout>
+     
+
+    <com.routon.smartcampus.view.NoScrollGridView
+        android:id="@+id/gridView"
+        android:layout_marginTop="@dimen/list_view_flower_common_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/above_content"
+        android:layout_alignLeft="@id/above_content"
+        android:layout_alignRight="@id/above_content"
+        android:verticalSpacing="@dimen/list_view_flower_common_margin"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:visibility="gone" />
+
+</RelativeLayout>

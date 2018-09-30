@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:id="@+id/class_img_item_view"
+        android:scaleType="centerCrop"
+        android:layout_margin="2dp"
+        />
+
+     <RelativeLayout 
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:id="@+id/class_record_display"
+        android:background="@drawable/shape_edit"
+       
+        >
+         
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/record_blue_rectangle_shape"
+            android:layout_marginTop="40dp"
+           >
+        <ImageView
+	        android:id="@+id/class_play_record_img"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_gravity="center_vertical"
+	        android:gravity="center"
+	        android:background="@drawable/play_record_anim"/>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30s"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/class_play_record_img"
+            android:id="@+id/tv_record_time"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            />
+        </RelativeLayout>
+      </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/class_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

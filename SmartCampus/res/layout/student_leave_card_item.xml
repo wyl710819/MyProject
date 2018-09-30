@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Space
+        android:layout_height="14dp"
+        android:layout_width="fill_parent"
+        />
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/shape_student_leave_card_item"
+        >
+
+        <TextView
+            android:id="@+id/student_name_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:text="@string/student_leave_name_label" />
+
+        <TextView
+            android:id="@+id/leave_time_label_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/student_name_tv1"
+            android:layout_alignStart="@+id/student_name_tv1"
+            android:layout_below="@+id/student_name_tv1"
+            android:layout_marginTop="11dp"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:text="@string/student_leave_time_label" />
+
+        <TextView
+            android:id="@+id/leave_time_text_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_below="@+id/student_name_tv1"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@+id/leave_time_label_tv1"
+            android:layout_toEndOf="@+id/leave_time_label_tv1"
+            android:text="@string/student_leave_time_text" />
+
+        <TextView
+            android:id="@+id/leave_reason_label_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_alignLeft="@+id/leave_time_label_tv1"
+            android:layout_alignStart="@+id/leave_time_label_tv1"
+            android:layout_below="@+id/leave_time_text_tv1"
+            android:layout_marginTop="3dp"
+            android:text="@string/student_leave_reason_label" />
+
+        <TextView
+            android:id="@+id/leave_reason_text_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_below="@+id/leave_time_text_tv1"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/leave_reason_label_tv1"
+            android:layout_toEndOf="@+id/leave_reason_label_tv1"
+            android:text="@string/student_leave_reason_text" />
+
+        <TextView
+            android:id="@+id/vline1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/leave_reason_label_tv1"
+            android:layout_alignStart="@+id/leave_reason_label_tv1"
+            android:layout_below="@+id/leave_reason_text_tv1"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="#d5d5d5" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/leave_reason_label_tv1"
+            android:layout_alignStart="@+id/leave_reason_label_tv1"
+            android:layout_below="@+id/vline1"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/slc_rl1"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/slci_iv1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/student_leave_confirm_icon_desc"
+                        android:src="@drawable/confirm_icon" />
+
+                    <Space
+                        android:id="@+id/sl_space1"
+                        android:layout_width="7dp"
+                        android:layout_height="fill_parent"
+                        />
+
+                    <TextView
+                        android:id="@+id/slci_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="@string/student_leave_confirm_icon_desc"
+                        android:textColor="#14ba23" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/slc_rl2"
+                android:visibility="gone"
+                android:layout_weight="1.5" 
+                android:gravity="center">
+
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/slai_iv1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/student_leave_approved_icon_desc"
+                        android:src="@drawable/confirm_icon2" />
+
+                    <Space
+                        android:id="@+id/sl_space2"
+                        android:layout_width="7dp"
+                        android:layout_height="fill_parent"
+                        />
+                    <TextView
+                        android:id="@+id/slai_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999999"
+                        android:textSize="18sp"
+                        android:text="@string/student_leave_approved_icon_desc" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/slc_rl3"
+                android:layout_weight="1"
+                 >
+
+                <TextView
+                    android:id="@+id/hline1"
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="#d5d5d5" />
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <ImageView
+                        android:id="@+id/slri_iv1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/student_leave_reject_icon_desc"
+                        android:src="@drawable/reject_icon" />
+                    <Space
+                        android:id="@+id/sl_space3"
+                        android:layout_width="7dp"
+                        android:layout_height="fill_parent"
+                        />
+
+                    <TextView
+                        android:id="@+id/slri_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="@string/student_leave_reject_icon_desc"
+                        android:textColor="#ff5b40" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/slc_rl4"
+                android:visibility="gone"
+                android:layout_weight="1.5" 
+                android:gravity="center">
+
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:gravity="center"
+                    >
+                    <ImageView
+                        android:id="@+id/slri_iv2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/student_leave_rejected_icon_desc"
+                        android:src="@drawable/reject_icon2" />
+                    <Space
+                        android:id="@+id/sl_space4"
+                        android:layout_width="7dp"
+                        android:layout_height="fill_parent"
+                        />
+
+                    <TextView
+                        android:id="@+id/slri_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="#999999"
+                        android:text="@string/student_leave_rejected_icon_desc" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/student_leave_card_corner_iv1"
+            android:contentDescription="@string/student_leave_pending_icon_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/pending_corner" />
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

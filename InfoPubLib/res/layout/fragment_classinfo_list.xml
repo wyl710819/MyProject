@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/create_titlebar" android:id="@+id/titlebar"/>
+	<com.routon.inforelease.widget.SelectTabWidget android:id="@+id/sel_widget"
+        	android:layout_width="match_parent"  
+        	android:layout_height="wrap_content"/>  
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_class_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/common_space"
+	    android:verticalSpacing="@dimen/common_space" 
+	    android:horizontalSpacing="@dimen/common_space"
+	    android:gravity="center" 
+        ptr:ptrMode="both" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_bar"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:weightSum="3"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_snotice_add"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_bg"
+            android:drawableTop="@drawable/ic_add_material"
+            android:text="@string/snotice_add"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_font" />
+
+        <Button
+            android:id="@+id/btn_class_info_publish"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_bg"
+            android:drawableTop="@drawable/ic_time_setting"
+            android:text="发布"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_font" />
+
+        <Button
+            android:id="@+id/btn_snotice_del"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_bg"
+            android:drawableTop="@drawable/ic_delete_material"
+            android:text="@string/snotice_del"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_font" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/image_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher" />
+
+    <CheckBox
+        android:id="@+id/plan_check_box"
+        android:layout_width="@dimen/select_check_box_w"
+        android:layout_height="@dimen/select_check_box_w"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="top|end" />
+
+</RelativeLayout>

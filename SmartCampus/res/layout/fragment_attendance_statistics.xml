@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/class_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/student_title_bg"
+        android:padding="3dp" >
+    <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/tv_class_ll"
+            android:background="@drawable/rectangle_shape"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+             android:clickable="true"
+            >
+            <TextView
+            android:id="@+id/tv_class"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="" 
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/class_iv_sel"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/class_tv"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/webwxgetmsgimg" />
+            
+        </LinearLayout>
+        </RelativeLayout>
+        <ListView
+        android:id="@+id/student_listview"
+        android:layout_below="@id/class_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+        
+        
+        <View
+        android:id="@+id/dropdown_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/dropdown_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/class_title"
+        android:paddingLeft="3dp"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/dropdown_listview"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@color/badgetype_listview_color"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

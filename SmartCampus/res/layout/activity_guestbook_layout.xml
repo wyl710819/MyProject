@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <include
+        android:id="@+id/compare_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/schoolcompare_title" 
+        android:layout_alignParentTop="true"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4DCC6" 
+        android:layout_marginTop="3dp"
+        android:id="@+id/edit_rl"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="想对孩子说："
+            android:textSize="16sp"
+            android:id="@+id/guest_text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            />
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_below="@id/guest_text"
+             android:layout_marginBottom="10dp"
+            >
+            <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="留言"
+            android:textColor="@color/blue"
+            android:background="@drawable/shape_edit"
+            android:textSize="16sp"
+            android:id="@+id/msg_but"
+            android:clickable="true"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            />
+            
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msg_editview"
+            android:inputType="textMultiLine"
+           android:background="@drawable/shape_edit"
+           android:layout_toLeftOf="@id/msg_but"
+            android:padding="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:maxLength="56"
+            android:minLines="2"
+             />
+            
+        </RelativeLayout>
+    </RelativeLayout>
+    <ListView 
+        android:id="@+id/guestbook_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/compare_title_layout"
+        android:layout_above="@id/edit_rl"
+        android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="@null"
+            android:listSelector="@color/transparent"
+            android:fastScrollEnabled="false"
+            android:scrollbars="none"
+        ></ListView>
+    
+
+</RelativeLayout>

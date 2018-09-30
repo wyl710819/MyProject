@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_select_item_h"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_space"
+        android:paddingRight="@dimen/common_space"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="start|center_vertical"
+            android:textSize="@dimen/normal_font"
+            android:text="@string/begin_time" />
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="right|center_vertical"
+            android:textSize="@dimen/normal_font" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_select_item_h"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_space"
+        android:paddingRight="@dimen/common_space"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="start|center_vertical"
+            android:textSize="@dimen/normal_font"
+            android:text="@string/end_time" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="right|center_vertical"
+            android:textSize="@dimen/normal_font" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_select_item_h"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_space"
+        android:paddingRight="@dimen/common_space"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="start|center_vertical"
+            android:textSize="@dimen/normal_font"
+            android:text="@string/text_color" />
+
+        <Button
+            android:id="@+id/btn_select_text_color"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="right|center_vertical"
+            android:textSize="@dimen/normal_font" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_select_item_h"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_space"
+        android:paddingRight="@dimen/common_space"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="start|center_vertical"
+            android:textSize="@dimen/normal_font"
+            android:text="@string/text_bg_color" />
+
+        <Button
+            android:id="@+id/btn_select_background_color"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:textSize="@dimen/normal_font"
+            android:gravity="right|center_vertical" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_select_item_h"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_space"
+        android:paddingRight="@dimen/common_space"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="start|center_vertical"
+            android:textSize="@dimen/normal_font"
+            android:text="@string/text_bg_alpha" />
+
+        <EditText
+            android:id="@+id/edit_background_alpha"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="right|center_vertical"
+            android:textSize="@dimen/normal_font"
+            android:inputType="number"
+            android:text="255" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/more" />
+    </LinearLayout>	
+</LinearLayout>
+<CheckBox 
+        android:id="@+id/select_all"
+        android:checked="true"
+        android:textSize="20sp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/modify_all_text"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:button="@drawable/checkbox_selector_tag"/>
+</RelativeLayout>

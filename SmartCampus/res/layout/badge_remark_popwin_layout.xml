@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/text_edit_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" 
+    	android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/remark_edit_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:src="@drawable/save_remark_img" />
+
+       
+        <TextView
+            android:id="@+id/remark_award_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:text="颁发"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+           />
+         <TextView
+            android:id="@+id/remark_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/remark_award_text"
+            android:layout_toRightOf="@id/remark_edit_img"
+            android:background="@drawable/shape_edit"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+             />
+        
+
+        <EditText
+            android:id="@+id/remark_edit_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/remark_award_text"
+            android:layout_toRightOf="@id/remark_edit_img"
+            android:layout_below="@id/remark_title_view"
+            android:background="@drawable/shape_edit"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:maxLength="64"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/text_edit_rl"
+        android:background="#66cccccc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_below="@id/text_edit_rl"
+        android:gravity="center_horizontal" >
+
+        <com.routon.smartcampus.view.HorizontalListView
+            android:id="@+id/remark_img_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transcriptMode="normal"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/remark_img_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="18sp" />
+        
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/del_btn"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:textSize="22sp"
+                android:text="-"
+                android:gravity="center"
+                android:textColor="@android:color/darker_gray"
+                android:background="@android:color/transparent"/>            
+
+            <TextView
+                android:id="@+id/bonuspoint_text"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#ed1c24" />
+            
+			<Button
+                android:id="@+id/add_btn"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:paddingRight="5dp"
+                android:textSize="22sp"
+                android:text="+" 
+                android:gravity="center"
+                android:textColor="@android:color/darker_gray"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

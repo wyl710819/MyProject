@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_class_grade_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aea097"
+    android:orientation="vertical" >
+
+    <com.routon.smartcampus.gradetrack.GradeTrackTitle
+        android:id="@+id/class_grades_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.routon.smartcampus.gradetrack.TwoListLayout
+        android:id="@+id/linearlayout_class_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout_student_name"
+            android:layout_width="80dp"
+            android:layout_marginRight="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/txt_name_index"
+                android:layout_width="match_parent"
+                android:layout_height="36.5dp"
+                android:background="@drawable/background_subject_one"
+                android:gravity="center"
+                android:text="姓名"
+                android:textSize="18sp" 
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+            <ListView
+                android:id="@+id/list_student_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:divider="#aea097"
+                android:dividerHeight="1dp"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+
+        <com.routon.smartcampus.gradetrack.SlowScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="-10dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_class_grade_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list_class_grades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:divider="#aea097"
+                    android:dividerHeight="1dp" >
+                </ListView>
+            </LinearLayout>
+        </com.routon.smartcampus.gradetrack.SlowScrollView>
+    </com.routon.smartcampus.gradetrack.TwoListLayout>
+
+</LinearLayout>

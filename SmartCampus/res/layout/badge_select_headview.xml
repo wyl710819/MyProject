@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/student_sel_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <HorizontalScrollView
+            android:background="#E5E5E5"
+            android:id="@+id/horizontal_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"    
+            android:scrollbars="none" >
+            <LinearLayout  
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+                <GridView 
+                    android:id="@+id/students_list_grid_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="spacingWidthUniform" 
+                    />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_below="@id/horizontal_scrollview"
+            android:id="@+id/badge_often_tv"
+            android:background="#E3F8FF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"     
+            android:layout_marginLeft="2dp"
+            android:padding="10dp"
+            android:text="常用小红花"
+            android:textColor="@color/text_grey"
+            android:textSize="16sp" />
+</RelativeLayout>

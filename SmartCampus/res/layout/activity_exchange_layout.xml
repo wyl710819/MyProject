@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView 
+            android:id="@+id/prize_student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="X X X"
+            android:textSize="@dimen/prize_exchange_text_size"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="    可兑换的小红花积分："
+            android:textSize="@dimen/prize_exchange_text_size"
+            android:gravity="center"
+            />
+        
+        <TextView 
+            android:id="@+id/student_prize_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="X朵"
+            android:textSize="@dimen/prize_exchange_text_size"
+            android:gravity="center"
+            android:textColor="@color/text_green_color"
+            />
+    </LinearLayout>
+    
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/award_list"
+        ></ListView>
+    
+    <!-- <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兑换"
+            android:textColor="@color/white"
+             android:background="@drawable/exchange_but_shape"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp"
+            />
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:background="#FFD76B"
+             android:layout_alignParentRight="true"
+            android:text="返回"
+            />
+        
+    </RelativeLayout> -->
+
+</LinearLayout>

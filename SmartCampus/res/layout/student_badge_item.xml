@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rippleStyle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/flower_item_height" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/flower_image_w"
+        android:layout_height="@dimen/flower_image_h"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_dp_10"
+        android:layout_marginTop="@dimen/common_dp_10"
+        android:layout_marginBottom="@dimen/common_dp_10"
+        android:src="@drawable/default_pic" />
+
+    <LinearLayout
+        android:id="@+id/name_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/common_dp_10"
+        android:layout_marginRight="@dimen/common_dp_10"
+        android:layout_marginTop="@dimen/common_dp_10"
+        android:layout_toRightOf="@id/image"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/flower_item_name_h"
+            android:layout_marginRight="@dimen/common_dp_10"
+            android:gravity="left|center_vertical"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/flower_item_name_h"
+            android:layout_marginLeft="@dimen/common_dp_10"
+            android:gravity="left|center_vertical"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/teacher_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_layout"
+        android:layout_marginLeft="@dimen/common_dp_10"
+        android:layout_toRightOf="@id/image"
+        android:gravity="left|center_vertical"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/create_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacher_info"
+        android:layout_marginBottom="@dimen/common_dp_10"
+        android:layout_marginLeft="@dimen/common_dp_10"
+        android:layout_toRightOf="@id/image"
+        android:gravity="left|center_vertical"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"/>
+    
+    <com.routon.smartcampus.view.RippleView
+        android:id="@+id/retract_ripple_view"
+        android:layout_width="@dimen/student_badge_retract_w"
+        android:layout_height="@dimen/student_badge_retract_h"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        rippleStyle:rv_centered="true"
+        rippleStyle:rv_color="#02BFAB"
+        rippleStyle:rv_rippleDuration="200" 
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/retract"
+            android:layout_width="@dimen/student_badge_retract_w"
+            android:layout_height="@dimen/student_badge_retract_h"
+            android:background="@drawable/add_btn_bg"
+            android:text="撤消"
+            android:textColor="#ff0000"
+            android:gravity="center"/>
+    </com.routon.smartcampus.view.RippleView>
+
+</RelativeLayout>

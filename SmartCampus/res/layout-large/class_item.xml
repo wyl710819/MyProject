@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+   >
+   <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:background="@drawable/homework_item_bag"
+       >
+    <!-- <View
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/class_item_bag"/> -->
+    <ImageView
+        android:id="@+id/select_add"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+	    android:layout_marginBottom="20dp"
+        android:src="@drawable/select_add"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="20dp"
+	    android:id="@+id/rl_text"
+        >
+    <TextView
+        android:id="@+id/tv_class_homework"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="三年级(一)班"
+        android:layout_marginLeft="35dp"
+        
+        android:textSize="16sp"
+        android:textColor="#786b62"
+        />
+     <TextView
+        android:id="@+id/btn_modify"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="删除"
+        android:layout_toRightOf="@+id/tv_class_homework"
+        android:layout_marginLeft="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/homework_but_gray_bag"
+        android:visibility="gone"
+        
+        />
+      <TextView
+        android:id="@+id/btn_correct"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="批改"
+        android:layout_toRightOf="@+id/btn_modify"
+        android:layout_marginLeft="20dp"
+       
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/assing_homework_bag"
+        android:visibility="gone"
+        />
+    <TextView 
+        android:id="@+id/class_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:paddingRight="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/tv_class_homework"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+       
+        android:text=""
+        android:textSize="12sp"
+        android:textColor="#b94645"
+        android:visibility="gone"/>
+    
+    <com.routon.smartcampus.view.HorizontalListView
+            android:id="@+id/class_img_listview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="35dp" 
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/class_description"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    
+    
+    <ImageView 
+        android:id="@+id/right_arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+	    android:layout_marginBottom="20dp"
+        android:src="@drawable/right_red"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"/>
+
+    </RelativeLayout>
+</RelativeLayout>

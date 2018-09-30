@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leave_dialog_title_rl"
+        android:padding="12dp"
+        android:background="#94d074"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/leave_dialog_title_time"
+            android:text="2018-8-20 8:00~8:40"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/leave_dialog_title_class"
+            android:text="三（一）班 英语课 代课老师"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_below="@id/leave_dialog_title_time"
+            />
+        
+    </RelativeLayout>
+    <ListView 
+        android:layout_width="300dp"
+        android:layout_height="240dp"
+        android:id="@+id/leave_dialog_lv"
+        android:layout_below="@id/leave_dialog_title_rl"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:background="#f5f5f5"
+        ></ListView>
+</RelativeLayout>

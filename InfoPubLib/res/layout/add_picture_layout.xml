@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <GridView
+        android:id="@+id/id_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:gravity="center"
+        android:padding="@dimen/common_small_space"
+        android:horizontalSpacing="@dimen/common_small_space"
+        android:verticalSpacing="@dimen/common_small_space" 
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:layout_marginBottom="@dimen/add_activity_botton">
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/id_bottom_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_activity_botton"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:clickable="true" 
+        android:padding="@dimen/common_space">
+
+        <TextView
+            android:id="@+id/id_choose_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="所有图片"
+            android:textColor="@android:color/white" 
+            android:textSize="@dimen/create_bottom_button_text_size"/>
+        
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/id_choose_dir"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_up"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/id_total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="0张"
+            android:textColor="@android:color/white" 
+            android:textSize="@dimen/create_bottom_button_text_size"/>
+    </RelativeLayout>
+
+</RelativeLayout>

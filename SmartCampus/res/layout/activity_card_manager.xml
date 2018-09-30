@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:id="@+id/layout"
+    >
+    <RelativeLayout android:layout_marginTop="0dp"
+        android:id="@+id/student_card_rl"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <ImageView
+            android:id="@+id/bg_iv"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/studentcard_bg" />
+        <TextView android:layout_toRightOf="@id/bg_iv"
+            android:id="@+id/version_tv"
+            android:layout_marginLeft="-20dp"
+            android:gravity="left|center_vertical"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="match_parent"/>
+        <RelativeLayout android:layout_centerHorizontal="true"
+           	android:layout_marginTop="20dp"
+           	android:background="@drawable/studentcard_shape"
+        	android:layout_width="100dp"
+        	android:layout_height="150dp">
+        	<ImageView
+        	android:src="@drawable/default_student"
+            android:id="@+id/student_profile_iv"
+            android:layout_marginTop="10dp"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"/>
+        	<TextView android:layout_below="@id/student_profile_iv"
+            	android:id="@+id/student_name_tv"
+            	android:layout_width="80dp"
+            	android:layout_centerHorizontal="true"
+            	android:layout_height="20dp"
+            	android:gravity="center"
+            	android:text="" 
+        		android:textStyle="bold"
+           	 	android:textSize="16sp"/>
+        	<TextView android:layout_below="@id/student_name_tv"
+            	android:id="@+id/student_class_tv"
+            	android:layout_centerHorizontal="true"
+            	android:layout_width="80dp"
+            	android:layout_height="30dp"
+            	android:gravity="center_horizontal"
+            	android:text="" 
+           	 	android:textSize="12sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_marginTop="10dp"
+        android:id="@+id/student_step_rl"
+        android:layout_margin="10dp"
+        android:background="@drawable/homework_item_bag"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <com.routon.smartcampus.studentcard.CircleProgressView
+            	android:id="@+id/student_step_cv"
+            	android:layout_width="wrap_content"
+            	android:layout_margin="10dp"
+            	android:layout_centerVertical ="true"
+            	android:layout_height="wrap_content"/>
+        <TextView android:layout_alignParentRight="true"
+            	android:layout_marginRight="20dp"
+            	android:id="@+id/student_stepweek_tv"
+            	android:visibility="invisible"
+            	android:layout_marginTop="20dp"
+            	android:layout_width="200dp"
+            	android:layout_height="40dp"
+            	android:gravity="right"
+            	android:text="@string/student_week_step_blank" 
+           	 	android:textSize="18sp"/>
+        <TextView android:layout_below="@id/student_stepweek_tv"
+            	android:layout_alignRight="@id/student_stepweek_tv"
+            	android:visibility="invisible"
+            	android:id="@+id/student_stepranking_tv"
+            	android:layout_width="200dp"
+            	android:layout_height="40dp"
+            	android:gravity="right"
+            	android:text="@string/student_rank_step_blank" 
+           	 	android:textSize="18sp"/>
+     </RelativeLayout>
+     <RelativeLayout android:layout_margin="10dp"
+        android:id="@+id/student_upgrade_rl"
+        android:background="@drawable/homework_item_bag"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+          <TextView android:layout_marginTop="10dp"
+            	android:layout_centerHorizontal="true"
+            	android:id="@+id/student_upgrade_tv"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:gravity="center"
+            	android:text="此校园卡有新版本程序!\n点击下方&quot;升级&quot;按钮进行升级!" 
+           	 	android:textSize="18sp"/>
+           <Button android:layout_marginTop="10dp"
+            	android:layout_centerHorizontal="true"
+            	android:layout_below="@+id/student_upgrade_tv"
+            	android:id="@+id/student_upgrade_btn"
+            	android:layout_width="100dp"
+            	android:layout_height="30dp"
+            	android:gravity="center"
+            	android:text="升　级" 
+            	android:background="@drawable/shape_line_blue"
+           	 	android:textSize="18sp"/>
+            <Button android:layout_marginTop="10dp"
+            	android:layout_centerHorizontal="true"
+            	android:layout_below="@+id/student_upgrade_tv"
+            	android:id="@+id/stop_btn"
+            	android:layout_width="100dp"
+            	android:layout_height="30dp"
+            	android:gravity="center"
+            	android:text="停　止" 
+            	android:background="@drawable/shape_line_blue"
+           	 	android:textSize="18sp"/>
+      </RelativeLayout>
+ <!--   <ListView
+        android:id="@+id/deviceListView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"  
+        android:layout_weight="1" 
+        android:paddingTop="5dp">
+    </ListView>
+    <TextView
+        android:id="@+id/tipLabel"
+        android:textSize="18sp"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"  
+        android:gravity="center"/> --> 
+</LinearLayout>

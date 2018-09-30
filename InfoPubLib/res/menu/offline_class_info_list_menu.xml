@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/btn_class_info_add" android:title="新增离线班牌" />
+    <!-- <item android:id="@+id/btn_class_info_add_template" android:title="新增模板班牌" /> -->
+    <!-- <item android:id="@+id/btn_class_info_add_special" android:title="新增侧位班牌" /> -->
+    <item android:id="@+id/btn_offline_release" android:title="离线发布" />  
+    <item android:id="@+id/btn_class_info_del" android:title="删除" />
+    <item android:id="@+id/select_all" android:title="@string/select_all" />
+	<item android:id="@+id/unselect" android:title="@string/unselect" />
+</menu>

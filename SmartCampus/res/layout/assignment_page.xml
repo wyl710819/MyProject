@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/assign_page" >
+  
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/homework_title" 
+        android:id="@+id/title_layout"/>
+   <View
+       android:id="@+id/viewLine"
+       android:layout_width="match_parent"
+       android:layout_height="5dp"
+       android:layout_below="@id/title_layout"
+       android:background="#CAA796"
+      
+       />
+   <ListView
+        android:layout_below="@id/viewLine"
+        android:id="@+id/homework_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#CAA796"
+        android:padding="15dp" 
+        android:dividerHeight="15dp"
+        android:background="#CAA796" />
+
+</RelativeLayout>

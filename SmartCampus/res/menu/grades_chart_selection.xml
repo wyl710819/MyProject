@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res_auto">
+    <item 
+        android:id="@+id/btn_menu_piechart"
+        android:title=""
+        android:icon="@drawable/grade_track_menu_rado"
+        android:showAsAction="always"/>
+    <item 
+        android:id="@+id/btn_menu_linechart"
+        android:title=""
+        android:icon="@drawable/grade_track_menu_zigzag"
+        android:showAsAction="always"/>
+    <item 
+        android:id="@+id/btn_menu_barchart"
+        android:title=""
+        android:icon="@drawable/grade_track_menu_hist"
+        android:showAsAction="always"/>
+
+</menu>

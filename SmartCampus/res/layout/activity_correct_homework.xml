@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/correct_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EAE4D9" >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_homework_back" />
+
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/back_btn"
+            android:gravity="center_vertical"
+            android:textColor="@color/homework_text_color"
+            android:textSize="20sp" />
+
+               <LinearLayout 
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:orientation="horizontal"
+		            android:id="@+id/tv_correct_linear"
+		            android:background="@drawable/correct_rectangle_shape_red"
+		            android:layout_marginBottom="5dp"
+		            android:layout_marginTop="5dp"
+		            android:layout_marginRight="10dp"
+		            android:layout_alignParentRight="true"
+		            android:paddingRight="10dp"
+		            android:clickable="true"
+		           
+		            >
+		        <TextView
+		            android:id="@+id/correct_remark_tv"
+		            android:layout_width="95dp"
+		            android:layout_height="match_parent"
+		            android:gravity="center"
+		            android:textColor="@color/homework_text_color"
+		            android:text="所有" 
+		            android:textSize="18sp"/>
+
+		        <ImageView
+		            android:id="@+id/coursetable_class_iv_sel"
+		            android:layout_width="35dp"
+		            android:layout_height="35dp"
+		            android:layout_toRightOf="@id/correct_remark_tv"
+		            android:gravity="center"
+		            android:layout_gravity="center_vertical"
+		            android:layout_marginTop="10dp"
+		            android:layout_marginBottom="10dp"
+		            android:src="@drawable/correct_down_arrow" />
+		            
+        		</LinearLayout>
+   <!--      <TextView
+            android:id="@+id/next_but"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="完成"
+            android:textColor="@color/homework_text_color"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/next_but"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/un_submit_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="未交"
+                android:textColor="@color/homework_text_grey"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="/"
+                android:textColor="@color/homework_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/submit_state_whole"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="所有"
+                android:textColor="@color/homework_text_color"
+                android:textSize="16sp" />
+        </LinearLayout> -->
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll_view"
+        android:layout_below="@id/correct_title_rl"
+        android:background="#ded3c3"
+        >
+    <RelativeLayout
+        android:id="@+id/homework_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <RelativeLayout
+            android:id="@+id/homework_content_text_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            
+            
+            
+         <ImageView
+            android:id="@+id/homework_img"
+            android:layout_width="70dp"
+            android:layout_height="93dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="6dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+            
+            <TextView
+                android:id="@+id/homework_date_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/homework_img"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp" />
+            
+            
+              
+                  <!-- <TextView 
+                 android:layout_width="60dp"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/modify_homework"
+                 android:textSize="18sp"
+                 android:text="修改"
+                 android:layout_below="@id/homework_date_class"
+                 android:textColor="@android:color/white"
+                 android:background="@drawable/homework_but_bag"
+                 android:layout_alignParentRight="true"
+                 android:gravity="center"
+                 android:layout_marginRight="10dp"
+                 /> -->
+           
+
+            <TextView
+                android:id="@+id/homework_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/homework_date_class"
+                android:layout_toLeftOf="@id/homework_img"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <!-- <GridView
+            android:id="@+id/homework_img_gridview"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/homework_content_text_rl"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
+            android:horizontalSpacing="3dp"
+            android:numColumns="3"
+            android:verticalSpacing="3dp" /> -->
+    </RelativeLayout>
+    </ScrollView>
+   
+    <com.routon.smartcampus.student.PullToRefreshInitialIndexGridView
+        android:id="@+id/student_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/scroll_view"
+        android:background="@color/white"
+        android:scrollingCache="false" />
+    
+    
+     <View
+        android:id="@+id/dropdown_mask_correct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />    
+     <FrameLayout
+	      android:id="@+id/dropdown_correct_remark"
+	      android:layout_width="wrap_content"
+	      android:layout_height="200dp"
+	      android:layout_alignParentRight="true"
+	      android:paddingRight="10dp"
+	      android:layout_below="@id/correct_title_rl"
+	      android:visibility="gone" >
+
+      <ListView
+          android:id="@+id/dropdown_listview_correct_remark"
+          android:layout_width="140dp"
+          android:layout_height="wrap_content"
+          android:background="#EAE4D9"
+          android:visibility="gone"/>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#20AEEA"
+        android:padding="3dp"
+        >
+        <ImageView
+            android:id="@+id/backIv"
+            android:contentDescription="@string/cancel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:scaleType="center"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/backIv"
+            android:layout_toEndOf="@id/backIv"
+            android:id="@+id/tv_class_ll"
+            android:background="@drawable/rectangle_shape"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/tv_class"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/student_leave_classname" 
+                android:textSize="16sp"/>
+            <ImageView
+                android:id="@+id/iv_class_sel"
+                android:contentDescription="@string/class_list_title"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/webwxgetmsgimg" />
+        </LinearLayout>
+        <ImageView 
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="@string/student_leave_icon_desc"
+            android:id="@+id/leave_stat_icon_button1"
+            android:src="@drawable/leave_stat_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生请假"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            />
+        <ImageView 
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="@string/student_leave_icon_desc"
+            android:id="@+id/back_icon_button1"
+            android:src="@drawable/ic_back_white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/student_leave_lv1"
+            android:divider="#00ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+        <Space
+            android:layout_height="14dp"
+            android:layout_width="fill_parent"
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/dropdown_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    <FrameLayout
+        android:id="@+id/dropdown_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/class_title"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_marginTop="50dp"
+        android:visibility="gone" >
+        <ListView
+            android:id="@+id/dropdown_listview"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+</RelativeLayout>

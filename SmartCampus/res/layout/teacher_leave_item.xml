@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leave_item_time"
+        android:textColor="#999999"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leave_item_type"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+          android:layout_marginBottom="10dp"
+         android:layout_marginTop="5dp"
+        android:textColor="#fd2222"
+        android:layout_below="@id/leave_item_time"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leave_item_teacher_name"
+        android:textSize="16sp"
+         android:layout_marginRight="5dp"
+          android:layout_marginBottom="10dp"
+         android:layout_marginTop="5dp"
+        android:textColor="#666666"
+        android:layout_below="@id/leave_item_time"
+        android:layout_toRightOf="@id/leave_item_type"
+        />
+   
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    >
+
+    
+    <com.routon.inforelease.widget.ClassPreviewView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/horizontal_menu_child_default"
+        />
+    <ImageView 
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:id="@+id/item_publish"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/publish_tip"
+        android:visibility="gone"
+        />
+
+    <!-- <CheckBox
+        android:id="@+id/item_select"
+        android:layout_width="@dimen/select_check_box_w"
+        android:layout_height="@dimen/select_check_box_w"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="top|end"
+        android:background="@drawable/checkbox_selector_tag"
+        android:button="@null" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="5dp" 
+       >
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/item_subtitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="subTitle1"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_subtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:text="subTitle2"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="desc"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+    <ImageView  
+     	android:id="@+id/item_priority"
+     	android:layout_width="40dp"
+     	android:layout_height="40dp"
+     	android:visibility="gone"
+    	android:layout_alignRight="@id/image"
+     	android:layout_alignBottom="@id/image"
+     	android:src="@drawable/student_v"
+     	android:scaleType="fitXY"
+     />
+</RelativeLayout>

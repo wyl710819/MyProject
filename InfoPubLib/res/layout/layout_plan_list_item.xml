@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="3dp"
+    
+    >
+
+    <com.routon.inforelease.widget.PlanPreviewView
+        android:id="@+id/plan_vp_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/horizontal_menu_child_default"
+        />
+    <ImageView 
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:id="@+id/item_publish"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/publish_tip"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

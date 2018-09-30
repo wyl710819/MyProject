@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >  
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <com.routon.inforelease.widget.PictureEditView
+            android:id="@+id/picture_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bottom_bar"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_bg"
+                android:text="@string/add_text_to_picture"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_font" />
+			 <Button
+                android:id="@+id/btn_add_pic"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_bg"
+                android:text="@string/add_picture"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_font" />
+            <Button
+                android:id="@+id/btn_modify"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_bg"
+                android:text="@string/modify"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_font" />
+
+            <Button
+                android:id="@+id/btn_fontsize_inc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_bg"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="@dimen/symbol_normal_font" />
+
+            <Button
+                android:id="@+id/btn_fontsize_des"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_bg"
+                android:text="－"
+                android:textColor="@color/black"
+                android:textSize="@dimen/symbol_normal_font" />
+			 <Button
+                android:id="@+id/btn_rotate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_bg"
+                android:text="@string/rotate"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_font" />
+            <Button
+                android:id="@+id/btn_color"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_bg"
+                android:text="@string/color"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_font" />
+
+            <Button
+                android:id="@+id/btn_del"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_bg"
+                android:text="@string/delete"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_font"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<resources xmlns:adnroid="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:windowActionBar">false</item>
+    </style>
+    
+    <style name="default_animation" parent="@android:style/Animation.Activity">
+    	<item name="android:activityOpenEnterAnimation">@animator/slide_in_right</item>
+    	<item name="android:activityOpenExitAnimation">@animator/slide_out_left</item>
+    	<item name="android:activityCloseEnterAnimation">@animator/slide_in_left</item>
+    	<item name="android:activityCloseExitAnimation">@animator/slide_out_right</item>
+	</style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowAnimationStyle">@style/default_animation</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="AppNoTitleTheme" parent="@android:style/Theme.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:windowAnimationStyle">@style/default_animation</item>
+    </style>
+	
+     <style name="normalText" parent="@android:style/TextAppearance">                        
+	     <item name="android:textColor">#FFFFFF</item>  
+	     <item name="android:textSize">18sp</item>  
+     </style>  
+     <style name="linkText" parent="@android:style/TextAppearance">                        
+	     <item name="android:textColor">#2996DE</item>  
+	     <item name="android:textSize">18sp</item>  
+    </style> 
+    <style name="normalGrayText" parent="@android:style/TextAppearance">                        
+	     <item name="android:textColor">@color/gray</item>  
+	     <item name="android:textSize">18sp</item>
+	     <item name="android:gravity">center_vertical</item>    
+    </style> 
+    <style name="normalBlackText" parent="@android:style/TextAppearance">                        
+	     <item name="android:textColor">@color/black</item>  
+	     <item name="android:textSize">18sp</item>
+	     <item name="android:gravity">center_vertical</item>    
+    </style> 
+    <style name="settingGrayItem" parent="normalBlackText">                          
+	     <item name="android:gravity">center_vertical</item>  
+	     <item name="android:background">@color/lightgray</item>
+	     <item name="android:paddingLeft">@dimen/setting_item_margin_left</item>
+    </style> 
+    <style name="settingWhiteItem" parent="normalBlackText">                           
+	     <item name="android:gravity">center_vertical</item>  
+	     <item name="android:background">@color/white</item> 
+	     <item name="android:paddingLeft">@dimen/setting_item_margin_left</item>
+    </style> 
+     <style name="detailItem">                        
+	     <item name="android:textColor">@color/black</item>    
+	     <item name="android:textSize">18sp</item>  
+	     <item name="android:gravity">center_vertical</item>  
+	     <item name="android:background">@color/white</item> 
+	     <item name="android:paddingLeft">@dimen/setting_item_margin_left</item>
+    </style> 
+    
+    <style name="CustomWindowTitleBackground">  
+  		<!-- <item name="android:background">@drawable/shape_blue_gradient</item>  --> 
+	</style>  
+	<style name="CustomWindowTitleText">  
+ 		<item name="android:textColor">#ffffff</item>  
+  		<item name="android:textSize">18sp</item>  
+	</style> 
+	
+	<style name="new_circle_progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+
+
+	<style name="create_title_bar" parent="AppBaseTheme">
+	     <item name="android:windowTitleSize">@dimen/title_bar_h</item>
+	</style>
+	    
+    <style name="createTitle" parent="@android:style/TextAppearance">                        
+	    <item name="android:textColor">#FFFFFF</item>  
+        <item name="android:textSize">22sp</item>
+    </style>
+    
+    <style name="anim_popup_dir">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+    
+</resources>

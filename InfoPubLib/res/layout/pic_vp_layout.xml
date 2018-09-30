@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pic_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/dot_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/dot_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:shadowColor="#ff000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <com.routon.inforelease.widget.AutoScrollTextView
+        android:id="@+id/previewMsgTextView"
+         android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:background="#33CCCCCC"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textSize="30px" 
+         android:shadowColor="#aa000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1">
+    </com.routon.inforelease.widget.AutoScrollTextView>
+</RelativeLayout>

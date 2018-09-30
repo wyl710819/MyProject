@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="@dimen/student_grid_image_w"
+        android:layout_height="@dimen/student_grid_image_h"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_student" />
+
+    <ImageView
+        android:id="@+id/item_agency"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@id/item_img"
+        android:layout_alignRight="@id/item_img"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+    
+    <ImageView
+        android:id="@+id/low_power_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_img"
+        android:layout_alignLeft="@id/item_img"
+        android:src="@drawable/low_power_ic"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="3dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/item_rate_text"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@id/item_img"
+        android:layout_alignRight="@id/item_img"
+        android:gravity="center"
+        android:shadowColor="#FFd275"
+        android:shadowRadius="1"
+		    android:shadowDx="2"
+		    android:shadowDy="2"
+
+        android:textColor="#FF6600"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/item_selector"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/checkbox_normal"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_img"
+        android:layout_centerHorizontal="true"
+        android:text="XXX" />
+
+    <TextView
+        android:id="@+id/item_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_name"
+        android:layout_marginTop="-4dp"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/badge_info_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_info"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/item_badge_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="@color/text_green_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_badge_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/item_badge_num"
+            android:text="/30"
+            android:textColor="@color/text_yellow_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/green_dot_view"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blue_dot"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+</RelativeLayout>

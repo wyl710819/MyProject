@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacher_leave_rl"
+        android:layout_margin="15dp"
+        android:background="@drawable/shape_leave_bg"
+        >
+        <TextView 
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/leave_teacher_title"
+            android:background="@drawable/leave_title_blue"
+            android:text="请假时间及理由"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_time_ll"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/leave_teacher_title"
+            android:layout_marginTop="20dp"
+            >
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="起始时间："
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                />
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:id="@+id/teacher_leave_start_time"
+                android:text="2018-8-18 8:00"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="16sp"
+                android:background="@drawable/shape_leave_time_bg"
+                />
+            
+        </LinearLayout>
+        
+         <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_time_ll2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/start_time_ll"
+            android:layout_marginTop="10dp"
+            >
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="截止时间："
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                />
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:id="@+id/teacher_leave_end_time"
+                android:text="2018-8-18 17:00"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="16sp"
+                android:background="@drawable/shape_leave_time_bg"
+                />
+            
+        </LinearLayout>
+        
+         <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_time_ll3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/start_time_ll2"
+            android:layout_marginTop="10dp"
+            >
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/teacher_leave_cause_t"
+                android:text="请假理由："
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                />
+            <EditText 
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:id="@+id/teacher_leave_cause"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:maxLength="32"
+                android:background="@drawable/shape_leave_time_bg"
+                />
+            
+        </LinearLayout>
+        
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/teacher_leave_amount_time"
+             android:text="共计：0节课"
+             android:textColor="#999999"
+             android:textSize="16sp"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="20dp"
+             android:layout_marginTop="15dp"
+             android:layout_marginBottom="15dp"
+             android:layout_below="@id/start_time_ll3"
+             />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacher_leave_list_rl"
+        android:layout_below="@id/teacher_leave_rl"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_leave_bg"
+        >
+        
+        <TextView 
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacher_title"
+            android:background="@drawable/leave_title_green"
+            android:text="代课老师"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            />
+        <ListView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/teacher_leave_listview"
+            android:layout_below="@id/teacher_title"
+            android:layout_margin="5dp"
+            />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

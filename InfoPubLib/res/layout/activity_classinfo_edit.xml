@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:id="@+id/title_linearlayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_space"
+            android:gravity="left|center_vertical"
+            android:text="标题"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/create_bottom_button_text_size" />
+
+        <EditText
+            android:id="@+id/edit_class_info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/create_bottom_button_text_size"
+            android:maxLength="16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+         android:id="@+id/title1_linearlayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_space"
+            android:gravity="left|center_vertical"
+            android:text="副标题1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/create_bottom_button_text_size" />
+
+        <EditText
+            android:id="@+id/edit_class_info_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/create_bottom_button_text_size"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:id="@+id/title2_linearlayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_space"
+            android:gravity="left|center_vertical"
+            android:text="副标题2"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/create_bottom_button_text_size" />
+
+        <EditText
+            android:id="@+id/edit_class_info_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/create_bottom_button_text_size"
+            android:maxLength="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:id="@+id/desc_linearlayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_space"
+            android:gravity="left|center_vertical"
+            android:text="描述"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/create_bottom_button_text_size" />
+
+        <EditText
+            android:id="@+id/edit_class_info_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="6"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/create_bottom_button_text_size"
+            android:maxLength="105" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/class_info_files_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:horizontalSpacing="@dimen/common_space"
+        android:numColumns="1"
+        android:paddingTop="@dimen/common_space"
+        android:verticalSpacing="@dimen/common_space" />
+    <com.routon.inforelease.widget.ClassPreviewView
+        android:id="@+id/class_info_edit_vp"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout  android:id="@+id/group_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_bar"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btn_add_file"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_bg"
+            android:drawableTop="@drawable/ic_add_material"
+            android:text="@string/snotice_add"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_font" />
+
+        <Button
+            android:id="@+id/btn_del_file"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_bg"
+            android:drawableTop="@drawable/ic_delete_material"
+            android:text="@string/snotice_del"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_font" />
+    </LinearLayout>
+
+</LinearLayout>

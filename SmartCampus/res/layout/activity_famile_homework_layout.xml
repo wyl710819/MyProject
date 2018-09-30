@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/family_rl"
+     >
+
+    <include
+        android:id="@+id/title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/homework_title" />
+
+    <!--
+    <ViewFlipper
+        android:id="@+id/flipper_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout"
+        android:layout_marginLeft="5dp" />
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flipper_view"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#1779be"/>
+    -->
+
+    <com.routon.smartcampus.view.WeekCalendarView
+        android:id="@+id/weekCalendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout" >
+    </com.routon.smartcampus.view.WeekCalendarView>
+
+    <ListView
+        android:id="@+id/homework_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/weekCalendarView"
+        android:background="@color/homework_list_bag_color"
+        android:dividerHeight="5dp" 
+        android:divider="@color/homework_list_bag_color"/>
+
+</RelativeLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/plan_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/complate_program_success"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="6" 
+            android:id="@+id/publish_btn_layout">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button_publish_plan"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="4"
+                android:background="@drawable/publish_btn"
+                android:text="@string/publish_now"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#F7F7F7" />
+
+        <!--
+         <ListView 
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />"
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/line_contract_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_select_item_h"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_space"
+                android:paddingRight="@dimen/common_space"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/program_name_title"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_font" />
+
+                <TextView
+                    android:id="@+id/edit_contract_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/normal_font" />
+
+                <ImageView
+                    android:id="@+id/more_edit_contract_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_pics_count"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_select_item_h"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_space"
+                android:paddingRight="@dimen/common_space"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/pics_title"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_font" />
+
+                <TextView
+                    android:id="@+id/text_pics_count"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/normal_font" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_text_count"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_select_item_h"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_space"
+                android:paddingRight="@dimen/common_space"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/text_title"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_font" />
+
+                <TextView
+                    android:id="@+id/text_count"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/normal_font" />
+
+                <ImageView
+                    android:id="@+id/more_text_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/more" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_group_count"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_select_item_h"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_space"
+                android:paddingRight="@dimen/common_space"
+                android:weightSum="10" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/group_title"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_font" />
+
+                <TextView
+                    android:id="@+id/text_group_count"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@color/text_grey"
+                    android:textSize="@dimen/normal_font" />
+
+                <ImageView
+                    android:id="@+id/more_group_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:src="@drawable/more" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/material_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_bar"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/button_offline_release"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_bg"
+            android:drawableTop="@drawable/ic_publish"
+            android:text="离线发布"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_font" />
+
+        <Button
+            android:id="@+id/btn_delete_contract"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_bg"
+            android:drawableTop="@drawable/ic_delete_material"
+            android:text="@string/delete_ad"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_font" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/setting_item_padding"
+    android:orientation="vertical">
+    <RelativeLayout  android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/rect_bg">
+   	  <TextView
+        android:id="@+id/tv_username"
+        android:padding = "@dimen/setting_item_padding"
+        android:layout_width="@dimen/user_item_tip_text_width"
+        android:layout_height="wrap_content"
+        android:text="@string/username_must"
+        style="@style/normalBlackText"  />
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding = "@dimen/setting_item_padding"
+        android:layout_toRightOf="@id/tv_username"
+        android:maxLength="64"
+        android:background="@null"
+        android:textSize="18sp"
+        android:gravity="center_vertical"/>
+    <View android:layout_below="@id/tv_username"
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D1D1D1" />
+    <TextView
+        android:id="@+id/tv_realname"
+        android:layout_below="@id/tv_username"
+        android:layout_width="@dimen/user_item_tip_text_width"
+        android:layout_height="wrap_content"
+        android:padding = "@dimen/setting_item_padding"
+        android:text="@string/realname_must"
+        style="@style/normalBlackText"  />
+    <EditText
+        android:id="@+id/et_realname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding = "@dimen/setting_item_padding"
+        android:layout_toRightOf="@id/tv_realname"
+        android:layout_below ="@id/et_username"
+        android:maxLength="64"
+        android:background="@null"
+        style="@style/normalBlackText"  />
+    <View android:layout_below="@id/tv_realname"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D1D1D1" />
+     <TextView
+        android:id="@+id/tv_phone"
+        android:layout_below="@id/tv_realname"
+        android:padding = "@dimen/setting_item_padding"
+        android:layout_width="@dimen/user_item_tip_text_width"
+        android:layout_height="wrap_content"
+        android:text="@string/realname_must"
+       style="@style/normalBlackText"  />
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding = "@dimen/setting_item_padding"
+        android:layout_below ="@id/et_realname"
+        android:layout_toRightOf="@id/tv_phone"
+        android:maxLength="64"
+        android:background="@null"
+        style="@style/normalBlackText"  />
+    </RelativeLayout>
+    <RelativeLayout  android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/rect_bg">
+   	  <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="@dimen/user_item_tip_text_width"
+        android:layout_height="wrap_content"
+        android:padding = "@dimen/setting_item_padding"
+        android:text="@string/email"
+        style="@style/normalBlackText"  />
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding = "@dimen/setting_item_padding"
+        android:layout_toRightOf="@id/tv_email"
+        android:maxLength="64"
+        android:background="@null"
+        style="@style/normalBlackText"  />
+    <View android:layout_below="@id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D1D1D1" />
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_below="@id/tv_email"
+        android:layout_width="@dimen/user_item_tip_text_width"
+        android:layout_height="wrap_content"
+        android:padding = "@dimen/setting_item_padding"
+        android:text="@string/address"
+        style="@style/normalBlackText"  />
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email"
+        android:padding = "@dimen/setting_item_padding"
+        android:layout_toRightOf="@id/tv_address"
+        android:maxLength="64"
+        android:background="@null"
+        style="@style/normalBlackText"  />
+    </RelativeLayout>
+    <RelativeLayout  android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:id="@+id/rl_group"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/rect_bg">
+     <TextView
+        android:id="@+id/tv_group"
+        android:padding = "@dimen/setting_item_padding"
+        android:layout_width="@dimen/user_item_tip_text_width"
+        android:layout_height="wrap_content"
+        android:text="@string/group_must"
+        style="@style/normalBlackText"  />
+    <ImageView
+        android:id="@+id/infoicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/right_icon_margin_right"
+        android:src="@drawable/more"/>
+	</RelativeLayout>
+     <!-- 
+    <LinearLayout 
+        android:layout_marginTop="20dp"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@color/white"
+    	android:orientation="vertical">
+  	<RelativeLayout  android:id="@+id/rl_username"
+    	  android:paddingLeft="20dp"
+		  android:layout_width="match_parent"
+		  android:layout_height="@dimen/setting_item_height">
+		    <TextView android:id="@+id/tv_username"
+		        android:layout_width="@dimen/user_item_tip_text_width"
+		        android:gravity="left|center_vertical"
+		        android:layout_height="match_parent"
+		        style="@style/normalBlackText" 
+		    />
+		    <EditText android:layout_alignParentRight="true"
+		        android:id="@+id/et_username"
+		        android:singleLine="true"
+		        android:inputType="none"
+		        android:layout_marginRight="@dimen/right_info_margin_right"	
+		        android:layout_width="@dimen/user_item_edit_text_width"
+		        android:layout_height="match_parent"/>  
+		</RelativeLayout>
+		<RelativeLayout  android:id="@+id/rl_realname"
+		  android:paddingLeft="20dp"
+		  android:layout_width="match_parent"
+		  android:layout_height="@dimen/setting_item_height">
+		    <TextView
+		        android:id="@+id/tv_realname"
+		        android:layout_width="@dimen/user_item_tip_text_width"
+		        android:gravity="left|center_vertical"
+		        android:layout_height="match_parent"
+		        style="@style/normalBlackText" 
+		    />
+		    <EditText android:layout_alignParentRight="true"
+		        android:id="@+id/et_realname"
+		        android:inputType="none"
+		        android:singleLine="true"
+		        android:layout_marginRight="@dimen/right_info_margin_right"	
+		        android:layout_width="@dimen/user_item_edit_text_width"
+		        android:layout_height="match_parent"/>  
+		</RelativeLayout>
+	
+		<RelativeLayout  android:id="@+id/rl_phone"
+		  android:paddingLeft="20dp"
+		  android:layout_width="match_parent"
+		  android:layout_height="@dimen/setting_item_height">
+		    <TextView  android:id="@+id/tv_phone"
+		        android:text="@string/phonenum"
+		        android:layout_width="@dimen/user_item_tip_text_width"
+		        android:gravity="left|center_vertical"        
+		        android:layout_height="match_parent"
+		        style="@style/normalBlackText" 
+		    />
+		    <EditText android:layout_alignParentRight="true"
+		        android:id="@+id/et_phone"
+		        android:inputType="phone"
+		        android:layout_marginRight="@dimen/right_info_margin_right"	
+		        android:layout_width="@dimen/user_item_edit_text_width"
+		        android:layout_height="match_parent"/>  
+		</RelativeLayout>
+		
+		<RelativeLayout  android:id="@+id/rl_email"
+		  android:paddingLeft="20dp"
+		  android:layout_width="match_parent"
+		  android:layout_height="@dimen/setting_item_height">
+		    <TextView
+		        android:text="@string/email"
+		        android:layout_width="@dimen/user_item_tip_text_width"
+		        android:gravity="left|center_vertical"        
+		        android:layout_height="match_parent"
+		        style="@style/normalBlackText" 
+		    />
+		    <EditText android:layout_alignParentRight="true"
+		        android:id="@+id/et_email"
+		        android:singleLine="true"
+		        android:inputType="textEmailAddress"
+		        android:layout_marginRight="@dimen/right_info_margin_right"	
+		        android:layout_width="@dimen/user_item_edit_text_width"
+		        android:layout_height="match_parent"/>  
+		</RelativeLayout>
+	
+		<RelativeLayout  android:id="@+id/rl_address"
+		  android:paddingLeft="20dp"
+		  android:layout_width="match_parent"
+		  android:layout_height="@dimen/setting_item_height">
+		    <TextView
+		        android:text="@string/address"
+		        android:layout_width="@dimen/user_item_tip_text_width"
+		        android:gravity="left|center_vertical"
+		        android:layout_height="match_parent"
+		        style="@style/normalBlackText" 
+		    />
+		    <EditText android:layout_alignParentRight="true"
+		        android:id="@+id/et_address"
+		        android:inputType="none"
+		        android:singleLine="true"
+		        android:layout_marginRight="@dimen/right_info_margin_right"	
+		        android:layout_width="@dimen/user_item_edit_text_width"
+		        android:layout_height="match_parent"/>  
+		</RelativeLayout>	
+	    <com.routon.inforelease.widget.SettingItem  
+	       	android:id="@+id/item_group"  
+	       	android:layout_width="match_parent"  
+	       	android:layout_height="wrap_content"/>  
+	</LinearLayout> --> 
+</LinearLayout>

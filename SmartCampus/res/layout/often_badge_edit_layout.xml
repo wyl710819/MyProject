@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_edit_Rl"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bonuspoint_rl"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/decrease_img"
+                android:src="@drawable/ic_decrease"
+                />
+            <TextView 
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/bonuspoint_text"
+                android:text="10"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_toRightOf="@id/decrease_img"
+                />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/increase_img"
+                android:layout_toRightOf="@id/bonuspoint_text"
+                android:src="@drawable/ic_increase"
+                />
+            
+        </RelativeLayout>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_edit_view"
+            android:background="@drawable/shape_edit"
+            android:inputType="textMultiLine"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@id/bonuspoint_rl"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@id/title_edit_Rl"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/finish_btn"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_btn_blue"
+            android:layout_alignParentRight="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            
+            />
+        <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/remark_edit_view"
+            android:layout_toLeftOf="@id/finish_btn"
+            android:background="@drawable/shape_edit"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:maxLength="64"
+            android:hint="请输入评语内容"
+            />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

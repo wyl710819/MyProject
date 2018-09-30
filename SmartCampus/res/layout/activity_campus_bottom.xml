@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bottom_bar"
+    android:paddingTop="4dp"
+    android:paddingBottom="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+ 	<LinearLayout
+        android:id="@+id/ll_function"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="2dp"
+        android:orientation="vertical" >
+        <ImageView
+           android:id="@+id/iv_function"
+           android:layout_width="30dp"
+           android:layout_height="30dp"/>
+        <TextView
+          	android:id="@+id/tv_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_home_text"
+            android:layout_marginTop="@dimen/tabbar_text_margin_top"
+            android:textSize="@dimen/normal_font"/>
+    </LinearLayout>      
+    <LinearLayout
+        android:id="@+id/ll_setting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="2dp"
+        android:orientation="vertical" >
+        <ImageView
+           android:id="@+id/iv_setting"
+           android:layout_width="30dp"
+           android:layout_height="30dp"/>
+        <TextView
+          	android:id="@+id/tv_setting"
+          	android:text="@string/menu_setting_text"
+          	android:layout_marginTop="@dimen/tabbar_text_margin_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal_font" />
+    </LinearLayout>
+</LinearLayout>

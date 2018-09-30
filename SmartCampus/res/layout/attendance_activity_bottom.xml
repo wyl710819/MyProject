@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_bar"
+    android:orientation="horizontal" >
+    
+        <LinearLayout
+            android:id="@+id/bottom_ll_recentissued"
+             style="@style/student_bottom_ll"
+              >
+
+            <ImageView
+                 android:id="@+id/bottom_iv_recentissued"
+                style="@style/student_bottom_iv"
+                android:src="@drawable/ic_recent_issued" />
+
+            <TextView
+                 android:id="@+id/bottom_tv_recentissued"
+                 style="@style/student_bottom_tv"
+                android:text="@string/recent_issued"
+                />
+        </LinearLayout>
+        <!-- <LinearLayout
+            android:id="@+id/bottom_ll_prize"
+             style="@style/student_bottom_ll"
+             >
+
+            <ImageView
+                 android:id="@+id/bottom_iv_prize"
+                style="@style/student_bottom_iv"
+                android:src="@drawable/menu_prize" />
+
+            <TextView
+                 android:id="@+id/bottom_tv_prize"
+                style="@style/student_bottom_tv"
+                android:text="奖品"
+                 />
+        </LinearLayout> -->
+        <LinearLayout
+            android:id="@+id/bottom_ll_statistics"
+             style="@style/student_bottom_ll"
+              >
+
+            <ImageView
+                 android:id="@+id/bottom_iv_statistics"
+                style="@style/student_bottom_iv"
+                android:src="@drawable/ic_statistics" />
+
+            <TextView
+                 android:id="@+id/bottom_tv_statistics"
+                 style="@style/student_bottom_tv"
+                android:text="统计排行"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bottom_ll_student"
+            style="@style/student_bottom_ll"
+           >
+
+            <ImageView
+                 android:id="@+id/bottom_iv_student"
+                style="@style/student_bottom_iv"
+                android:src="@drawable/menu_student" />
+
+            <TextView
+                 android:id="@+id/bottom_tv_student"
+                 style="@style/student_bottom_tv"
+                android:text="学生"
+                 />
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/bottom_ll_exit"
+             style="@style/student_bottom_ll"
+              >
+
+            <ImageView
+                 android:id="@+id/bottom_iv_exit"
+                style="@style/student_bottom_iv"
+                android:src="@drawable/menu_exit" />
+
+            <TextView
+                 android:id="@+id/bottom_tv_exit"
+                 style="@style/student_bottom_tv"
+                android:text="退出"
+                />
+        </LinearLayout>
+
+</LinearLayout>

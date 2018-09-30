@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/create_bottom"
+        android:layout_alignParentBottom="true">
+    	<TextView
+    	    android:layout_width="match_parent"
+    	    android:layout_height="1dp"
+    	    android:background="#ededed"
+    	    android:layout_alignParentTop="true"/>    
+    
+        <RadioGroup 
+            android:id="@+id/switch_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/switch_l"
+            android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/common_space"
+	        android:orientation="horizontal"
+	        android:layout_centerHorizontal="true">
+	        
+	        <RadioButton 
+	            android:id="@+id/mine_pics"
+	            android:layout_width="130dp"
+	            android:layout_height="@dimen/create_bottom_button_h"
+	            android:text="@string/local_pics"
+	            android:textSize="@dimen/create_bottom_button_text_size"
+            	android:textColor="#2c91e1"
+	            android:button="@null"
+	            android:background="@null"
+	            android:gravity="center"/>
+	        <RadioButton 
+	            android:id="@+id/other_pics"
+	            android:layout_width="130dp"
+	            android:layout_height="@dimen/create_bottom_button_h"
+	            android:text="@string/online_pics"
+            	android:textColor="#2c91e1"
+	            android:textSize="@dimen/create_bottom_button_text_size"
+	            android:button="@null"
+	            android:background="@null"
+	            android:gravity="center"/>
+        </RadioGroup>        
+        
+   
+    </RelativeLayout>

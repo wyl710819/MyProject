@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendarview="http://schemas.android.com/apk/res-auto"
+    xmlns:weekview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/correct_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_blue_gradient" >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/back_btn"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/tv_class_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_shape"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/coursetable_class_tv"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="班级列表"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/coursetable_class_iv_sel"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/coursetable_class_tv"
+                android:gravity="center"
+                android:src="@drawable/webwxgetmsgimg" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/framlayout_teachercourse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/correct_title_rl"
+        android:background="#FFFFFF" >
+    </FrameLayout>
+
+  	<LinearLayout
+        android:id="@+id/cal_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/correct_title_rl"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dropdown_mask_coursetable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/dropdown_coursetable_class"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/correct_title_rl"
+        android:paddingRight="10dp"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/dropdown_listview_coursetable_class"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="#FAEF9B"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/create_titlebar" />
+
+    <LinearLayout android:id = "@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+    <!--    <com.routon.inforelease.widget.SettingItem
+            android:id="@+id/useritem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.routon.inforelease.widget.SettingItem
+            android:id="@+id/userlistitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.routon.inforelease.widget.SettingItem
+            android:id="@+id/groupitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.routon.inforelease.widget.SettingItem
+            android:id="@+id/bluetoothitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" /> --> 
+
+        
+        <!--
+           <com.routon.inforelease.widget.SettingItem  
+        	android:id="@+id/helpitem"  
+        	android:layout_width="match_parent"  
+        	android:layout_height="wrap_content"/>
+        -->
+
+       <!--  <com.routon.inforelease.widget.SettingItem
+            android:id="@+id/clearcacheitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.routon.inforelease.widget.SettingItem
+            android:id="@+id/aboutitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.routon.inforelease.widget.SettingItem
+            android:id="@+id/softveritem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />--> 
+    </LinearLayout>
+
+</LinearLayout>

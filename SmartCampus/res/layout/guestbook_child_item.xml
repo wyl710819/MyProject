@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+ <com.routon.inforelease.widget.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/img_view"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/default_student"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="5dp"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_view"
+        android:layout_toRightOf="@id/img_view"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg_view"
+         android:layout_toRightOf="@id/img_view"
+         android:layout_below="@id/time_view"
+         android:paddingLeft="15dp"
+         android:paddingRight="5dp"
+         android:paddingTop="5dp"
+         android:paddingBottom="5dp"
+         android:textSize="16sp"
+         android:background="@drawable/chat_bubble_child"
+         android:layout_marginTop="2dp"
+         android:layout_marginRight="40dp"
+         android:layout_marginLeft="2dp"
+        />
+</RelativeLayout>

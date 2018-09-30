@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.routon.smartcampus.view.PeriscopeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/periscope"
+    >
+
+    <RelativeLayout
+        android:id="@+id/class_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/student_title_bg"
+        android:padding="3dp" >
+        
+         <ImageView
+            android:id="@+id/backIv"
+            android:layout_width="@dimen/title_bar_btn_w"
+            android:layout_height="@dimen/title_bar_h"
+            android:clickable="true"
+            android:visibility="gone"
+            android:scaleType="center"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/backIv"
+            android:id="@+id/tv_class_ll"
+            android:background="@drawable/rectangle_shape"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+             android:clickable="true"
+            >
+            <TextView
+            android:id="@+id/tv_class"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="" 
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_class_sel"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_class"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/webwxgetmsgimg" />
+            
+        </LinearLayout>
+        
+        
+
+        <ImageView
+            android:id="@+id/iv_face_identify"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/face_identify_selector" />
+        
+        <ImageView
+            android:id="@+id/iv_choose_btn"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="120dp"
+            android:visibility="gone"
+            android:src="@drawable/flower_choose_normal" />
+        
+        <ImageView
+            android:id="@+id/iv_qr_scanner"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/menu_scan"
+            android:visibility="gone" />
+        
+    </RelativeLayout>
+
+    <com.routon.smartcampus.student.PullToRefreshInitialIndexGridView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/class_title"
+        android:scrollingCache="false"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:numColumns="3"/>
+
+    <View
+        android:id="@+id/dropdown_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/dropdown_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/class_title"
+        android:paddingLeft="3dp"
+        android:visibility="gone" >
+        <ListView
+            android:id="@+id/dropdown_listview"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+     <View
+        android:id="@+id/choose_dropdown_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/choose_dropdown_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/class_title"
+        android:layout_marginLeft="180dp"
+        android:visibility="gone" >
+        <ListView
+            android:id="@+id/choose_dropdown_listview"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+             android:gravity="center"
+            android:background="@android:color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</com.routon.smartcampus.view.PeriscopeLayout>

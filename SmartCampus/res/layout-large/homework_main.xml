@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homework_main" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/homework_title" 
+        android:id="@+id/title_layout"/>
+    <com.routon.smartcampus.view.WeekCalendarView
+        android:id="@+id/weekCalendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/title_layout" >
+    </com.routon.smartcampus.view.WeekCalendarView>
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#CAA796"
+        android:layout_below="@id/weekCalendarView"/>
+    <ListView
+        android:id="@+id/lv_class"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewLine"
+        android:background="#CAA796"/>
+
+</RelativeLayout>

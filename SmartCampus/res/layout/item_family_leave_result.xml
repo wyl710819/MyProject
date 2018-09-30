@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+    <TextView 
+        android:id="@+id/tv_family_leave_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4c4c4c"
+        android:textSize="16sp"
+        android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"/>
+    <TextView 
+        android:id="@+id/tv_family_leav_item_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxEms="15"
+        android:layout_alignLeft="@id/tv_family_leave_item_time"
+        android:layout_below="@id/tv_family_leave_item_time"
+        android:layout_marginTop="10dp"
+        android:textColor="#999999"
+        android:textSize="15sp"/>
+	<TextView 
+	    android:id="@+id/tv_family_leav_item_status"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@id/tv_family_leav_item_reason"
+	    android:textSize="15sp"/>
+</RelativeLayout>
